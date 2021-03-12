@@ -1,0 +1,98 @@
+{
+    "geneExpressions": {
+        "name": "geneExpressions",
+        "description": "This collection represents to __geneExpressions__ object",
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "experiment_id",
+                    "gene_id"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": "string",
+                        "annotation": {
+                            "Synonyms": "identifier",
+                            "Description": "The function of this value is to identify a geneExpression, which can be used to make queries and relationships with other fields",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": "For further details about ids definition, please consult identifiers section in RegulonDB manual"
+                        }
+                    },
+                    "sample_control_id": {
+                        "type": "string",
+                        "annotation": {
+                            "Synonyms": "identifier",
+                            "Description": "The function of this value is to identify a sample_id particularly and references a doc on samples collection",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": "For further details about ids definition, please consult identifiers section in RegulonDB manual"
+                        }
+                    },
+                    "gene_id": {
+                        "type": "string",
+                        "annotation": {
+                            "Synonyms": "identifier",
+                            "Description": "The function of this value is to identify a gene_id particularly and references a doc on gene collection",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": "For further details about ids definition, please consult identifiers section in RegulonDB manual"
+                        }
+                    },
+                    "count": {
+                        "type": "",
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description":"" ,
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "TPM": {
+                        "type": "",
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description":"" ,
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "RPKM": {
+                        "type": "",
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description":"" ,
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "normalized": {
+                        "type": "",
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description":"" ,
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}

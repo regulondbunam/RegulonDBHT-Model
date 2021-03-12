@@ -1,0 +1,147 @@
+{
+    "Ontology": {
+		"name": "Ontology",
+		"description": "This collection represents to __Ontology__ object",
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "name"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": "string",
+                        "annotation": {
+							"Synonyms": "identifier",
+                            "Description": "The function of this value is to identify a ontology doc, which can be used to make queries and relationships with other fields",
+							"URI": "[value]",
+							"Required": "[value]",
+							"Example": "",
+                            "Comments": "For further details about ids definition, please consult identifiers section in RegulonDB manual"
+						}
+                    },
+                    "name": {
+                        "type": "string",
+                        "annotation": {
+							"Synonyms":"" ,
+							"Description": "",
+							"URI": "[value]",
+							"Required": "[value]",
+							"Example": "",
+							"Comments":""
+						}
+                    },
+                    "description": {
+                        "type": "string",
+                        "annotation": {
+							"Synonyms":"" ,
+							"Description":"" ,
+							"URI": "[value]",
+							"Required": "[value]",
+							"Example": "",
+							"Comments": ""
+						}
+                    },
+                    "label": {
+                        "type": "string",
+                        "annotation": {
+							"Synonyms":"" ,
+							"Description":"" ,
+							"URI": "[value]",
+							"Required": "[value]",
+							"Example": "",
+							"Comments": ""
+						}
+                    },
+                    "type": {
+                        "type": "string",
+                        "annotation": {
+							"Synonyms":"" ,
+							"Description":"" ,
+							"URI": "[value]",
+							"Required": "[value]",
+							"Example": "",
+							"Comments": ""
+						}
+                    },
+                    "url": {
+                        "type": "string",
+                        "annotation": {
+							"Synonyms":"" ,
+							"Description":"" ,
+							"URI": "[value]",
+							"Required": "[value]",
+							"Example": "",
+							"Comments": ""
+						}
+                    },
+                    "externalCrossRefenrences": {
+                        "type": "array",
+                        "annotation": {
+							"Synonyms":"" ,
+							"Description":"" ,
+							"URI": "[value]",
+							"Required": "[value]",
+							"Example": "",
+							"Comments": ""
+						},
+						"uniqueItems": true,
+						"items": {
+							"type": "object",
+							"properties": {
+								"externalCrossReferencesId": {
+									"type": "string",
+									"annotation": {
+										"Synonyms":"" ,
+										"Description":"" ,
+										"URI": "[value]",
+										"Required": "[value]",
+										"Example": "",
+										"Comments": ""
+									}
+								},
+								"externalCrossReferenceName": {
+									"type": "string",
+									"annotation": {
+										"Synonyms":"" ,
+										"Description":"" ,
+										"URI": "[value]",
+										"Required": "[value]",
+										"Example": "",
+										"Comments": ""
+									}
+								},
+								"objectId": {
+									"type": "string",
+									"annotation": {
+										"Synonyms":"" ,
+										"Description":"" ,
+										"URI": "[value]",
+										"Required": "[value]",
+										"Example": "",
+										"Comments": ""
+									}
+								},
+								"url": {
+									"type": "string",
+									"annotation": {
+										"Synonyms":"" ,
+										"Description":"" ,
+										"URI": "[value]",
+										"Required": "[value]",
+										"Example": "",
+										"Comments": ""
+									}
+								}
+							}
+						}
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}

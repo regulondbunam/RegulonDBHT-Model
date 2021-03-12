@@ -1,0 +1,48 @@
+{
+    "plataforms": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "sourcedbId"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": "string"
+                    },
+                    "sourcedbId": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "externalCrossReferences": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                          "type": "object",
+                          "required": ["externalCrossReferences_id", "objectId"],
+                          "properties": {
+                            "externalCrossReferences_id": {
+                              "type": "string",
+                              "pattern": "^RDB[A-Z]{8}[0-9]{5}$"
+                            },
+                            "objectId": {
+                              "type": "string"
+                            }
+                          },
+                          "additionalProperties": false
+                        }
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}
