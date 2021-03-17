@@ -13,22 +13,22 @@
                         "type": "string"
                     },
                     "count": {
-                        "type": ""
+                        "type": "number"
                     },
                     "gene_id": {
                         "type": "string"
                     },
                     "normalized": {
-                        "type": ""
+                        "type": "number"
                     },
                     "RPKM": {
-                        "type": "string"
+                        "type": "number"
                     },
                     "sample_control_id": {
                         "type": "string"
                     },
                     "TPM": {
-                        "type": "string"
+                        "type": "number"
                     }
                 },
                 "additionalProperties": false
