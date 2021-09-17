@@ -1,0 +1,40 @@
+{
+    "geneExpressions": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "sample_control_id",
+                    "gene_id"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": "string"
+                    },
+                    "count": {
+                        "type": "number"
+                    },
+                    "gene_id": {
+                        "type": "string"
+                    },
+                    "normalized": {
+                        "type": "number"
+                    },
+                    "RPKM": {
+                        "type": "number"
+                    },
+                    "sample_control_id": {
+                        "type": "string"
+                    },
+                    "TPM": {
+                        "type": "number"
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}

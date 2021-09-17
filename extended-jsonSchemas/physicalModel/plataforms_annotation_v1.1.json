@@ -1,0 +1,125 @@
+{
+    "plataforms": {
+        "name": "plataforms",
+        "description": "This collection represents to __platforms__ object",
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "sourcedbId"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": "string",
+                        "annotation": {
+                            "Synonyms": "identifier",
+                            "Description": "The function of this value is to identify a platforms, which can be used to make queries and relationships with other fields",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": "For further details about ids definition, please consult identifiers section in RegulonDB manual"
+                        }
+                    },
+                    "sourcedbId": {
+                        "type": "string",
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description":"" ,
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "description": {
+                        "type": "string",
+                        "annotation": {
+                            "Synonyms":"" ,
+                            "Description":"" ,
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "title": {
+                        "type": "string",
+                        "annotation": {
+                            "Synonyms":"" ,
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "externalCrossRefenrences": {
+                        "type": "array",
+                        "annotation": {
+							"Synonyms":"" ,
+							"Description":"" ,
+							"URI": "[value]",
+							"Required": "[value]",
+							"Example": "",
+							"Comments": ""
+						},
+						"uniqueItems": true,
+						"items": {
+							"type": "object",
+							"properties": {
+								"externalCrossReferencesId": {
+									"type": "string",
+									"annotation": {
+										"Synonyms":"" ,
+										"Description":"" ,
+										"URI": "[value]",
+										"Required": "[value]",
+										"Example": "",
+										"Comments": ""
+									}
+								},
+								"externalCrossReferenceName": {
+									"type": "string",
+									"annotation": {
+										"Synonyms":"" ,
+										"Description":"" ,
+										"URI": "[value]",
+										"Required": "[value]",
+										"Example": "",
+										"Comments": ""
+									}
+								},
+								"objectId": {
+									"type": "string",
+									"annotation": {
+										"Synonyms":"" ,
+										"Description":"" ,
+										"URI": "[value]",
+										"Required": "[value]",
+										"Example": "",
+										"Comments": ""
+									}
+								},
+								"url": {
+									"type": "string",
+									"annotation": {
+										"Synonyms":"" ,
+										"Description":"" ,
+										"URI": "[value]",
+										"Required": "[value]",
+										"Example": "",
+										"Comments": ""
+									}
+								}
+							}
+						}
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}
