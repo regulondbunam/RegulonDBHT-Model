@@ -1,0 +1,460 @@
+{
+    "datasetDatamart": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "datasetID",
+                    "publication",
+                    "objectTested",
+                    "sourceSerie"
+                ],
+                "properties": {
+                    "datasetID": {
+                        "type": "string"
+                    },
+                    "publication": {
+                        "type": "object",
+                        "properties": {
+                            "pmid": {
+                                "type": "number"
+                            },
+                            "doi": {
+                                "type": ["string", "null"]
+                            },
+                            "authors": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "title": {
+                                "type": "string"
+                            },
+                            "date": {
+                                "type": "date"
+                            },
+                            "pmcid": {
+                                "type": ["string", "null"]
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "objectTested": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "synonyms": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "gene":{
+                                "type": "object",
+                                "properties": {
+                                    "_id": {
+                                        "type": ["string"]
+                                    },
+                                    "name": {
+                                        "type": ["string"]
+                                    }
+                                },
+                                "additionalProperties": false
+                            },
+                            "DBs":{
+                                "type": "object",
+                                "properties": {
+                                    "_id": {
+                                        "type": ["string"]
+                                    },
+                                    "name": {
+                                        "type": ["string"]
+                                    }
+                                },
+                                "additionalProperties": false
+                            },
+                            "summary": {
+                                "type": ["string"]
+                            },
+                            "activeConformations": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "externalCrossReferences": {
+								"type": "array",
+								"uniqueItems": true,
+								"items": {
+									"type": "object",
+									"properties": {
+										"externalCrossReferenceId": {
+											"type": ["string", "null"],
+											"pattern": "^RDB[A-Z0-9_]{5}[A-Z]{3}[0-9A-Z]{5}$"
+										},
+										"externalCrossReferenceName": {
+											"type": ["string", "null"]
+										},
+										"objectId": {
+											"type": ["string", "null"]
+										},
+										"url": {
+											"type": ["string", "null"]
+										}
+									},
+									"additionalProperties": false
+								}
+							}
+                        },
+                        "additionalProperties": false
+                    },
+                    "sourceSerie": {
+                        "type": "object",
+                        "properties": {
+                            "sourceId": {
+                                "type": "string"
+                            },
+                            "sourceName": {
+                                "type": ["string", "null"]
+                            },
+                            "title": {
+                                "type": ["string", "null"]
+                            },
+                            "platformID": {
+                                "type": "string"
+                            },
+                            "platformTitle": {
+                                "type": "string"
+                            },
+                            "strategy": {
+                                "type": ["string", "null"]
+                            },
+                            "method": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "sample": {
+                        "type": "object",
+                        "properties": {
+                            "experiment_id": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "control_id": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "title": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "linkedDataset": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "datasetID": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "sampleType": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "referenceGenome": {
+                        "type": "string"
+                    },
+                    "datasetType":{
+                        "type": "string"
+                    },
+                    "temporalDatasetID": {
+                        "type": "string"
+                    },
+                    "peaks": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "_id": {
+                                    "type": ["string"]
+                                },
+                                "closerGene": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": ["string"]
+                                        },
+                                        "name": {
+                                            "type": ["string"]
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                },
+                                "product": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": ["string"]
+                                        },
+                                        "name": {
+                                            "type": ["string"]
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                },
+                                "chromosome": {
+                                    "type": ["string", "null"]
+                                },
+                                "peakLeftPosition": {
+                                    "type": ["number", "null"]
+                                },
+                                "peakRightPosition": {
+                                    "type": ["number", "null"]
+                                },
+                                "score": {
+                                    "type": ["number", "null"]
+                                },
+                                "TFBinding_siteIds": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "tfBinding":{
+                        "type": "object",
+                        "properties": {
+                            "site_id": {
+                                "type": ["string"]
+                            },
+                            "chromosome": {
+                                "type": ["string"]
+                            },
+                            "chrLeftPosition": {
+                                "type": ["number", "null"]
+                            },
+                            "chrRightPosition": {
+                                "type": ["number", "null"]
+                            },
+                            "closerGene": {
+                                "type": "object",
+                                "properties": {
+                                    "_id": {
+                                        "type": ["string"]
+                                    },
+                                    "name": {
+                                        "type": ["string"]
+                                    }
+                                },
+                                "additionalProperties": false
+                            },
+                            "transcriptionUnit": {
+                                "type": "object",
+                                "properties": {
+                                    "_id": {
+                                        "type": ["string"]
+                                    },
+                                    "name": {
+                                        "type": ["string"]
+                                    }
+                                },
+                                "additionalProperties": false
+                            },
+                            "foundClassicRIs": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "TFBSLeftPosition": {
+                                            "type": ["number", "null"]
+                                        },
+                                        "TFBSRightPosition": {
+                                            "type": ["number", "null"]
+                                        },
+                                        "relativeGeneDistance": {
+                                            "type": ["number", "null"]
+                                        },
+                                        "relativeTSSDistance": {
+                                            "type": ["number", "null"]
+                                        },
+                                        "strand": {
+                                            "type": ["string", "null"]
+                                        },
+                                        "sequence": {
+                                            "type": ["string", "null"]
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            },
+                            "foundDatasetRIs": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "TFBSLeftPosition": {
+                                            "type": ["number", "null"]
+                                        },
+                                        "TFBSRightPosition": {
+                                            "type": ["number", "null"]
+                                        },
+                                        "relativeGeneDistance": {
+                                            "type": ["number", "null"]
+                                        },
+                                        "relativeTSSDistance": {
+                                            "type": ["number", "null"]
+                                        },
+                                        "strand": {
+                                            "type": ["string", "null"]
+                                        },
+                                        "sequence": {
+                                            "type": ["string", "null"]
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            },
+                            "name": {
+                                "type": ["string", "null"]
+                            },
+                            "score": { 
+                                "type": ["number", "null"]
+                            },
+                            "strand": {
+                                "type": ["string", "null"]
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "tfBindingAuthorsData": {
+                        "type": ["string"]
+                    },
+                    "growthConditions": {
+                        "type": ["string"]
+                    },
+                    "releaseDataControl": {
+                        "type": "object",
+                        "properties" :{
+                            "date": {
+                                "type": ["string"]
+                            },
+                            "version": {
+                                "type": ["string"]
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "summary": {
+                        "type": "object",
+                        "properties": {
+                            "totalOfPeaks": {
+                                "type": "object",
+                                "properties": {
+                                    "inDataset": {
+                                        "type": ["number", "null"]
+                                    },
+                                    "inRDBClassic": {
+                                        "type": ["number", "null"]
+                                    },
+                                    "sharedItems": {
+                                        "type": ["number", "null"]
+                                    },
+                                    "notInRDB": {
+                                        "type": ["number", "null"]
+                                    },
+                                    "notInDataset": {
+                                        "type": ["number", "null"]
+                                    }
+                                },
+                                "additionalProperties": false
+                            },
+                            "totalOfTFBS": {
+                                "type": "object",
+                                "properties": {
+                                    "inDataset": {
+                                        "type": ["number", "null"]
+                                    },
+                                    "inRDBClassic": {
+                                        "type": ["number", "null"]
+                                    },
+                                    "sharedItems": {
+                                        "type": ["number", "null"]
+                                    },
+                                    "notInRDB": {
+                                        "type": ["number", "null"]
+                                    },
+                                    "notInDataset": {
+                                        "type": ["number", "null"]
+                                    }
+                                },
+                                "additionalProperties": false
+                            },
+                            "totalOfGenes": {
+                                "type": "object",
+                                "properties": {
+                                    "inDataset": {
+                                        "type": ["number", "null"]
+                                    },
+                                    "inRDBClassic": {
+                                        "type": ["number", "null"]
+                                    },
+                                    "sharedItems": {
+                                        "type": ["number", "null"]
+                                    },
+                                    "notInRDB": {
+                                        "type": ["number", "null"]
+                                    },
+                                    "notInDataset": {
+                                        "type": ["number", "null"]
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}

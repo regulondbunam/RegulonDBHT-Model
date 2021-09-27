@@ -1,0 +1,1156 @@
+{
+    "datasetDatamart": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "datasetID",
+                    "publication",
+                    "objectTested",
+                    "sourceSerie"
+                ],
+                "properties": {
+                    "datasetID": {
+                        "type": "string",
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "publication": {
+                        "type": "object",
+                        "properties": {
+                            "pmid": {
+                                "type": "number",
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "doi": {
+                                "type": ["string", "null"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "authors": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "string"
+                                },
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "title": {
+                                "type": "string",
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "date": {
+                                "type": "date",
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "pmcid": {
+                                "type": ["string", "null"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "objectTested": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string",
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "name": {
+                                "type": "string",
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "synonyms": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "string"
+                                },
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "gene":{
+                                "type": "object",
+                                "properties": {
+                                    "_id": {
+                                        "type": ["string"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "name": {
+                                        "type": ["string"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    }
+                                },
+                                "additionalProperties": false
+                            },
+                            "DBs":{
+                                "type": "object",
+                                "properties": {
+                                    "_id": {
+                                        "type": ["string"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "name": {
+                                        "type": ["string"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    }
+                                },
+                                "additionalProperties": false
+                            },
+                            "summary": {
+                                "type": ["string"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "activeConformations": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "string"
+                                },
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "externalCrossReferences": {
+								"type": "array",
+								"uniqueItems": true,
+								"items": {
+									"type": "object",
+									"properties": {
+										"externalCrossReferenceId": {
+											"type": ["string", "null"],
+											"pattern": "^RDB[A-Z0-9_]{5}[A-Z]{3}[0-9A-Z]{5}$",
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+										},
+										"externalCrossReferenceName": {
+											"type": ["string", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+										},
+										"objectId": {
+											"type": ["string", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+										},
+										"url": {
+											"type": ["string", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+										}
+									},
+									"additionalProperties": false
+								}
+							}
+                        },
+                        "additionalProperties": false
+                    },
+                    "sourceSerie": {
+                        "type": "object",
+                        "properties": {
+                            "sourceId": {
+                                "type": "string",
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "sourceName": {
+                                "type": ["string", "null"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "title": {
+                                "type": ["string", "null"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "platformID": {
+                                "type": "string",
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "platformTitle": {
+                                "type": "string",
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "strategy": {
+                                "type": ["string", "null"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "method": {
+                                "type": "string",
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "sample": {
+                        "type": "object",
+                        "properties": {
+                            "experiment_id": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "string"
+                                },
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "control_id": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "string"
+                                },
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "title": {
+                                "type": "string",
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "linkedDataset": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "datasetID": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "sampleType": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "referenceGenome": {
+                        "type": "string",
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "datasetType":{
+                        "type": "string",
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "temporalDatasetID": {
+                        "type": "string",
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "peaks": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "_id": {
+                                    "type": ["string"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "closerGene": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": ["string"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        },
+                                        "name": {
+                                            "type": ["string"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                },
+                                "product": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": ["string"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        },
+                                        "name": {
+                                            "type": ["string"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                },
+                                "chromosome": {
+                                    "type": ["string", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "peakLeftPosition": {
+                                    "type": ["number", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "peakRightPosition": {
+                                    "type": ["number", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "score": {
+                                    "type": ["number", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "TFBinding_siteIds": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "tfBinding":{
+                        "type": "object",
+                        "properties": {
+                            "site_id": {
+                                "type": ["string"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "chromosome": {
+                                "type": ["string"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "chrLeftPosition": {
+                                "type": ["number", "null"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "chrRightPosition": {
+                                "type": ["number", "null"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "closerGene": {
+                                "type": "object",
+                                "properties": {
+                                    "_id": {
+                                        "type": ["string"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "name": {
+                                        "type": ["string"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    }
+                                },
+                                "additionalProperties": false
+                            },
+                            "transcriptionUnit": {
+                                "type": "object",
+                                "properties": {
+                                    "_id": {
+                                        "type": ["string"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "name": {
+                                        "type": ["string"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    }
+                                },
+                                "additionalProperties": false
+                            },
+                            "foundClassicRIs": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "TFBSLeftPosition": {
+                                            "type": ["number", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        },
+                                        "TFBSRightPosition": {
+                                            "type": ["number", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        },
+                                        "relativeGeneDistance": {
+                                            "type": ["number", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        },
+                                        "relativeTSSDistance": {
+                                            "type": ["number", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        },
+                                        "strand": {
+                                            "type": ["string", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        },
+                                        "sequence": {
+                                            "type": ["string", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            },
+                            "foundDatasetRIs": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "TFBSLeftPosition": {
+                                            "type": ["number", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        },
+                                        "TFBSRightPosition": {
+                                            "type": ["number", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        },
+                                        "relativeGeneDistance": {
+                                            "type": ["number", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        },
+                                        "relativeTSSDistance": {
+                                            "type": ["number", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        },
+                                        "strand": {
+                                            "type": ["string", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        },
+                                        "sequence": {
+                                            "type": ["string", "null"],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            },
+                            "name": {
+                                "type": ["string", "null"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "score": { 
+                                "type": ["number", "null"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "strand": {
+                                "type": ["string", "null"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "tfBindingAuthorsData": {
+                        "type": ["string"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "growthConditions": {
+                        "type": ["string"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "releaseDataControl": {
+                        "type": "object",
+                        "properties" :{
+                            "date": {
+                                "type": ["string"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "version": {
+                                "type": ["string"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "summary": {
+                        "type": "object",
+                        "properties": {
+                            "totalOfPeaks": {
+                                "type": "object",
+                                "properties": {
+                                    "inDataset": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "inRDBClassic": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "sharedItems": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "notInRDB": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "notInDataset": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    }
+                                },
+                                "additionalProperties": false
+                            },
+                            "totalOfTFBS": {
+                                "type": "object",
+                                "properties": {
+                                    "inDataset": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "inRDBClassic": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "sharedItems": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "notInRDB": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "notInDataset": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    }
+                                },
+                                "additionalProperties": false
+                            },
+                            "totalOfGenes": {
+                                "type": "object",
+                                "properties": {
+                                    "inDataset": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "inRDBClassic": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "sharedItems": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "notInRDB": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "notInDataset": {
+                                        "type": ["number", "null"],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}
