@@ -1,0 +1,91 @@
+{
+    "tfBinding": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "chromosome",
+                    "chrLeftPosition",
+                    "chrRightPosition",
+                    "score",
+                    "strand"
+                ],
+                "properties": {
+                    "chromosome": {
+                        "type": "string"
+                    },
+                    "chrLeftPosition": {
+                        "type": "number"
+                    },
+                    "chrRightPosition": {
+                        "type": "number"
+                    },
+                    "name": {
+                        "type": ["string", "null"]
+                    },
+                    "score": {
+                        "type": "string"
+                    },
+                    "strand": {
+                        "type": "string"
+                    },
+                    "closeGene": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "transcriptionUnit": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "foundRIs": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "transcriptionFactorID": {
+                                    "type": "string"
+                                },
+                                "transcriptionFactorName": {
+                                    "type": "string"
+                                },
+                                "TFBSLeftPosition": {
+                                    "type": "number"
+                                },
+                                "TFBSRightPosition": {
+                                    "type": "number"
+                                },
+                                "relativeGeneDistance": {
+                                    "type": "number"
+                                },
+                                "strand": {
+                                    "type": "string"
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}
