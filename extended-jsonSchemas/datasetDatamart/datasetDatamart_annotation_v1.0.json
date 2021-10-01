@@ -100,7 +100,7 @@
                     "objectTested": {
                         "type": "object",
                         "properties": {
-                            "id": {
+                            "_id": {
                                 "type": "string",
                                 "annotation": {
                                     "Synonyms": "",
@@ -363,7 +363,7 @@
                     "sample": {
                         "type": "object",
                         "properties": {
-                            "experiment_id": {
+                            "experimentId": {
                                 "type": "array",
                                 "uniqueItems": true,
                                 "items": {
@@ -378,7 +378,7 @@
                                     "Comments": ""
                                 }
                             },
-                            "control_id": {
+                            "controlId": {
                                 "type": "array",
                                 "uniqueItems": true,
                                 "items": {
@@ -597,7 +597,7 @@
                                         "Comments": ""
                                     }
                                 },
-                                "TFBinding_siteIds": {
+                                "siteIds": {
                                     "type": "array",
                                     "uniqueItems": true,
                                     "items": {
@@ -619,7 +619,7 @@
                     "tfBinding":{
                         "type": "object",
                         "properties": {
-                            "site_id": {
+                            "siteId": {
                                 "type": ["string"],
                                 "annotation": {
                                     "Synonyms": "",

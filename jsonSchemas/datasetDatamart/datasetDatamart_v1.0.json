@@ -44,7 +44,7 @@
                     "objectTested": {
                         "type": "object",
                         "properties": {
-                            "id": {
+                            "_id": {
                                 "type": "string"
                             },
                             "name": {
@@ -147,14 +147,14 @@
                     "sample": {
                         "type": "object",
                         "properties": {
-                            "experiment_id": {
+                            "experimentId": {
                                 "type": "array",
                                 "uniqueItems": true,
                                 "items": {
                                     "type": "string"
                                 }
                             },
-                            "control_id": {
+                            "controlId": {
                                 "type": "array",
                                 "uniqueItems": true,
                                 "items": {
@@ -245,7 +245,7 @@
                                 "score": {
                                     "type": ["number", "null"]
                                 },
-                                "TFBinding_siteIds": {
+                                "siteIds": {
                                     "type": "array",
                                     "uniqueItems": true,
                                     "items": {
@@ -259,7 +259,7 @@
                     "tfBinding":{
                         "type": "object",
                         "properties": {
-                            "site_id": {
+                            "siteId": {
                                 "type": ["string"]
                             },
                             "chromosome": {
