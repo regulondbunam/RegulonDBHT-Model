@@ -20,7 +20,7 @@
                                 "type": "number"
                             },
                             "doi": {
-                                "type": ["string", "null"]
+                                "type": ["string","null"]
                             },
                             "authors": {
                                 "type": "array",
@@ -33,10 +33,10 @@
                                 "type": "string"
                             },
                             "date": {
-                                "type": "date"
+                                "type": "string"
                             },
                             "pmcid": {
-                                "type": ["string", "null"]
+                                "type": ["string","null"]
                             }
                         },
                         "additionalProperties": false
@@ -57,29 +57,21 @@
                                     "type": "string"
                                 }
                             },
-                            "gene":{
-                                "type": "object",
-                                "properties": {
-                                    "_id": {
-                                        "type": ["string"]
+                            "genes": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": [ "string"]
+                                        },
+                                        "name": {
+                                            "type": ["string"]
+                                        }
                                     },
-                                    "name": {
-                                        "type": ["string"]
-                                    }
-                                },
-                                "additionalProperties": false
-                            },
-                            "DBs":{
-                                "type": "object",
-                                "properties": {
-                                    "_id": {
-                                        "type": ["string"]
-                                    },
-                                    "name": {
-                                        "type": ["string"]
-                                    }
-                                },
-                                "additionalProperties": false
+                                    "additionalProperties": false
+                                }
                             },
                             "summary": {
                                 "type": ["string"]
@@ -194,7 +186,7 @@
                     "referenceGenome": {
                         "type": "string"
                     },
-                    "datasetType":{
+                    "datasetType": {
                         "type": "string"
                     },
                     "temporalDatasetID": {
@@ -245,7 +237,7 @@
                                 "score": {
                                     "type": ["number", "null"]
                                 },
-                                "siteIds": {
+                                "siteIds": {
                                     "type": "array",
                                     "uniqueItems": true,
                                     "items": {
@@ -256,7 +248,7 @@
                             "additionalProperties": false
                         }
                     },
-                    "tfBinding":{
+                    "tfBinding": {
                         "type": "object",
                         "properties": {
                             "siteId": {
@@ -301,10 +293,10 @@
                                 "items": {
                                     "type": "object",
                                     "properties": {
-                                        "TFBSLeftPosition": {
+                                        "tfbsLeftPosition": {
                                             "type": ["number", "null"]
                                         },
-                                        "TFBSRightPosition": {
+                                        "tfbsRightPosition": {
                                             "type": ["number", "null"]
                                         },
                                         "relativeGeneDistance": {
@@ -329,10 +321,10 @@
                                 "items": {
                                     "type": "object",
                                     "properties": {
-                                        "TFBSLeftPosition": {
+                                        "tfbsLeftPosition": {
                                             "type": ["number", "null"]
                                         },
-                                        "TFBSRightPosition": {
+                                        "tfbsRightPosition": {
                                             "type": ["number", "null"]
                                         },
                                         "relativeGeneDistance": {
@@ -354,7 +346,7 @@
                             "name": {
                                 "type": ["string", "null"]
                             },
-                            "score": { 
+                            "score": {
                                 "type": ["number", "null"]
                             },
                             "strand": {
@@ -367,11 +359,51 @@
                         "type": ["string"]
                     },
                     "growthConditions": {
-                        "type": ["string"]
-                    },
-                    "releaseDataControl": {
                         "type": "object",
-                        "properties" :{
+                        "items": {
+                            "properties": {
+                                "organism": {
+                                    "type": "string"
+                                },
+                                "geneticBackground": {
+                                    "type": "string"
+                                },
+                                "medium": {
+                                    "type": "string"
+                                },
+                                "aeration": {
+                                    "type": "string"
+                                },
+                                "temperature": {
+                                    "type": "string"
+                                },
+                                "ph": {
+                                    "type": "string"
+                                },
+                                "pressure": {
+                                    "type": "string"
+                                },
+                                "opticalDensity": {
+                                    "type": "string"
+                                },
+                                "growthPhase": {
+                                    "type": "string"
+                                },
+                                "growthRate": {
+                                    "type": "string"
+                                },
+                                "vesselType": {
+                                    "type": "string"
+                                },
+                                "aerationSpeed": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "releaseDataControl": {
+                        "type": "object",
+                        "properties": {
                             "date": {
                                 "type": ["string"]
                             },
@@ -384,28 +416,43 @@
                     "summary": {
                         "type": "object",
                         "properties": {
-                            "totalOfPeaks": {
+                            "totalOfPeaks": {
                                 "type": "object",
                                 "properties": {
                                     "inDataset": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     },
                                     "inRDBClassic": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     },
                                     "sharedItems": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     },
                                     "notInRDB": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     },
                                     "notInDataset": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     }
                                 },
                                 "additionalProperties": false
                             },
-                            "totalOfTFBS": {
+                            "totalOftfbs": {
                                 "type": "object",
                                 "properties": {
                                     "inDataset": {
