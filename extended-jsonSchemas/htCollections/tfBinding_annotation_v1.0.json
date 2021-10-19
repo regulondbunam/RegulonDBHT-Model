@@ -1,0 +1,318 @@
+{
+    "tfBinding": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "siteId",
+                    "datasetId",
+                    "closerGene",
+                    "transcriptionUnit",
+                    "foundClassicRIs",
+                    "foundDatasetRIs"
+                ],
+                "properties": {
+                    "siteId": {
+                        "type": ["string"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "chromosome": {
+                        "type": ["string"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "chrLeftPosition": {
+                        "type": ["number", "null"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "chrRightPosition": {
+                        "type": ["number", "null"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "closerGene": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": ["string"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "name": {
+                                "type": ["string"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "transcriptionUnit": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": ["string"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "name": {
+                                "type": ["string"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "foundClassicRIs": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "tfbsLeftPosition": {
+                                    "type": ["number", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "tfbsRightPosition": {
+                                    "type": ["number", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "relativeGeneDistance": {
+                                    "type": ["number", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "relativeTSSDistance": {
+                                    "type": ["number", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "strand": {
+                                    "type": ["string", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "sequence": {
+                                    "type": ["string", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "foundDatasetRIs": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "tfbsLeftPosition": {
+                                    "type": ["number", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "tfbsRightPosition": {
+                                    "type": ["number", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "relativeGeneDistance": {
+                                    "type": ["number", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "relativeTSSDistance": {
+                                    "type": ["number", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "strand": {
+                                    "type": ["string", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "sequence": {
+                                    "type": ["string", "null"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "name": {
+                        "type": ["string", "null"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "score": {
+                        "type": ["number", "null"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "strand": {
+                        "type": ["string", "null"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "datasetId": {
+                        "type": ["string"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}

@@ -1,0 +1,157 @@
+{
+    "peaks": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "datasetId",
+                    "closerGene",
+                    "product"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": ["string"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "closerGene": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": ["string"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "name": {
+                                "type": ["string"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "product": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": ["string"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "name": {
+                                "type": ["string"],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "chromosome": {
+                        "type": ["string", "null"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "peakLeftPosition": {
+                        "type": ["number", "null"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "peakRightPosition": {
+                        "type": ["number", "null"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "score": {
+                        "type": ["number", "null"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "siteIds": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": ["string"],
+                            "annotation": {
+                                "Synonyms": "",
+                                "Description": "",
+                                "URI": "[value]",
+                                "Required": "[value]",
+                                "Example": "",
+                                "Comments": ""
+                            }
+                        }
+                    },
+                    "datasetId": {
+                        "type": ["string"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    }  
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}

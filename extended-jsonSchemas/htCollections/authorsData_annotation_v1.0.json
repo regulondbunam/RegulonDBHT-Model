@@ -1,0 +1,40 @@
+{
+    "authorsData": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "datasetId",
+                    "tfBindingAuthorsData"
+                ],
+                "properties": {
+                    "tfBindingAuthorsData": {
+                        "type": ["string"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "datasetId": {
+                        "type": ["string"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}

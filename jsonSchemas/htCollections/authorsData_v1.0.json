@@ -1,0 +1,24 @@
+{
+    "authorsData": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "datasetId",
+                    "tfBindingAuthorsData"
+                ],
+                "properties": {
+                    "tfBindingAuthorsData": {
+                        "type": ["string"]
+                    },
+                    "datasetId": {
+                        "type": ["string"]
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}

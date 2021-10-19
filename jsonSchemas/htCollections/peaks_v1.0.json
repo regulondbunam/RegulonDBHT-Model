@@ -1,0 +1,69 @@
+{
+    "peaks": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "datasetId",
+                    "closerGene",
+                    "product"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": ["string"]
+                    },
+                    "closerGene": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": ["string"]
+                            },
+                            "name": {
+                                "type": ["string"]
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "product": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": ["string"]
+                            },
+                            "name": {
+                                "type": ["string"]
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "chromosome": {
+                        "type": ["string", "null"]
+                    },
+                    "peakLeftPosition": {
+                        "type": ["number", "null"]
+                    },
+                    "peakRightPosition": {
+                        "type": ["number", "null"]
+                    },
+                    "score": {
+                        "type": ["number", "null"]
+                    },
+                    "siteIds": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "datasetId": {
+                        "type": ["string"]
+                    }  
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}

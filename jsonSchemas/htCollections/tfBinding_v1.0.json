@@ -1,0 +1,126 @@
+{
+    "tfBinding": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "siteId",
+                    "datasetId",
+                    "closerGene",
+                    "transcriptionUnit",
+                    "foundClassicRIs",
+                    "foundDatasetRIs"
+                ],
+                "properties": {
+                    "siteId": {
+                        "type": ["string"]
+                    },
+                    "chromosome": {
+                        "type": ["string"]
+                    },
+                    "chrLeftPosition": {
+                        "type": ["number", "null"]
+                    },
+                    "chrRightPosition": {
+                        "type": ["number", "null"]
+                    },
+                    "closerGene": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": ["string"]
+                            },
+                            "name": {
+                                "type": ["string"]
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "transcriptionUnit": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": ["string"]
+                            },
+                            "name": {
+                                "type": ["string"]
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "foundClassicRIs": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "tfbsLeftPosition": {
+                                    "type": ["number", "null"]
+                                },
+                                "tfbsRightPosition": {
+                                    "type": ["number", "null"]
+                                },
+                                "relativeGeneDistance": {
+                                    "type": ["number", "null"]
+                                },
+                                "relativeTSSDistance": {
+                                    "type": ["number", "null"]
+                                },
+                                "strand": {
+                                    "type": ["string", "null"]
+                                },
+                                "sequence": {
+                                    "type": ["string", "null"]
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "foundDatasetRIs": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "tfbsLeftPosition": {
+                                    "type": ["number", "null"]
+                                },
+                                "tfbsRightPosition": {
+                                    "type": ["number", "null"]
+                                },
+                                "relativeGeneDistance": {
+                                    "type": ["number", "null"]
+                                },
+                                "relativeTSSDistance": {
+                                    "type": ["number", "null"]
+                                },
+                                "strand": {
+                                    "type": ["string", "null"]
+                                },
+                                "sequence": {
+                                    "type": ["string", "null"]
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "name": {
+                        "type": ["string", "null"]
+                    },
+                    "score": {
+                        "type": ["number", "null"]
+                    },
+                    "strand": {
+                        "type": ["string", "null"]
+                    },
+                    "datasetId": {
+                        "type": ["string"]
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}
