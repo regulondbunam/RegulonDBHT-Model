@@ -384,44 +384,51 @@
                         "additionalProperties": false
                     },
                     "linkedDataset": {
-                        "type": "array",
-                        "uniqueItems": true,
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "datasetID": {
-                                    "type": "array",
-                                    "uniqueItems": true,
-                                    "items": {
-                                        "type": "string"
-                                    },
-                                    "annotation": {
-                                        "Synonyms": "",
-                                        "Description": "",
-                                        "URI": "[value]",
-                                        "Required": "[value]",
-                                        "Example": "",
-                                        "Comments": ""
-                                    }
+                        "type": "object",
+                        "properties": {
+                            "controlId": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "string"
                                 },
-                                "sampleType": {
-                                    "type": "array",
-                                    "uniqueItems": true,
-                                    "items": {
-                                        "type": "string"
-                                    },
-                                    "annotation": {
-                                        "Synonyms": "",
-                                        "Description": "",
-                                        "URI": "[value]",
-                                        "Required": "[value]",
-                                        "Example": "",
-                                        "Comments": ""
-                                    }
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
                                 }
                             },
-                            "additionalProperties": false
-                        }
+                            "experimentId": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "string"
+                                },
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "datasetType": {
+                                "type": "string",
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            }
+                        },
+                        "additionalProperties": false
                     },
                     "referenceGenome": {
                         "type": "string",

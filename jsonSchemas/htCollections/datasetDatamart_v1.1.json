@@ -74,12 +74,12 @@
                                 }
                             },
                             "summary": {
-                                "type": ["string"]
+                                "type": ["string", null]
                             },
                             "activeConformations": {
                                 "type": "array",
                                 "uniqueItems": true,
-                                "items": {
+                                "items": {
                                     "type": "string"
                                 }
                             },
@@ -118,7 +118,7 @@
                             "sourceName": {
                                 "type": ["string", "null"]
                             },
-                            "title": {
+                            "title": {
                                 "type": ["string", "null"]
                             },
                             "platformID": {
@@ -160,28 +160,27 @@
                         "additionalProperties": false
                     },
                     "linkedDataset": {
-                        "type": "array",
-                        "uniqueItems": true,
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "datasetID": {
-                                    "type": "array",
-                                    "uniqueItems": true,
-                                    "items": {
-                                        "type": "string"
-                                    }
-                                },
-                                "sampleType": {
-                                    "type": "array",
-                                    "uniqueItems": true,
-                                    "items": {
-                                        "type": "string"
-                                    }
+                        "type": "object",
+                        "properties": {
+                            "controlId": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "string"
                                 }
                             },
-                            "additionalProperties": false
-                        }
+                            "experimentId": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "datasetType": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false
                     },
                     "referenceGenome": {
                         "type": "string"
@@ -331,8 +330,7 @@
                         },
                         "additionalProperties": false
                     }
-                },
-                "additionalProperties": false
+                }
             }
         },
         "validationLevel": "strict",
