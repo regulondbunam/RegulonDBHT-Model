@@ -5,9 +5,8 @@
                 "type": "object",
                 "required": [
                     "_id",
-                    "datasetId",
-                    "closerGene",
-                    "product"
+                    "datasetIds",
+                    "closestGene"
                 ],
                 "properties": {
                     "_id": {
