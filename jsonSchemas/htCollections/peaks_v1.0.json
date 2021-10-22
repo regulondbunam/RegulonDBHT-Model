@@ -13,17 +13,24 @@
                     "_id": {
                         "type": ["string"]
                     },
-                    "closerGene": {
-                        "type": "object",
-                        "properties": {
-                            "_id": {
-                                "type": ["string"]
+                    "closestGenes": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "_id": {
+                                    "type": ["string"]
+                                },
+                                "name": {
+                                    "type": ["string"]
+                                },
+                                "distanceTo": {
+                                    "type": ["number"]
+                                }
                             },
-                            "name": {
-                                "type": ["string"]
-                            }
-                        },
-                        "additionalProperties": false
+                            "additionalProperties": false
+                        }
                     },
                     "product": {
                         "type": "object",
@@ -56,9 +63,13 @@
                             "type": "string"
                         }
                     },
-                    "datasetId": {
-                        "type": ["string"]
-                    }  
+                    "datasetIds": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "string"
+                        }
+                    }
                 },
                 "additionalProperties": false
             }

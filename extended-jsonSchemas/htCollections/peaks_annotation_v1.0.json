@@ -21,33 +21,48 @@
                             "Comments": ""
                         }
                     },
-                    "closerGene": {
-                        "type": "object",
-                        "properties": {
-                            "_id": {
-                                "type": ["string"],
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
+                    "closestGenes": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "_id": {
+                                    "type": ["string"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "name": {
+                                    "type": ["string"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "distanceTo": {
+                                    "type": ["number"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
                                 }
                             },
-                            "name": {
-                                "type": ["string"],
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
-                                }
-                            }
-                        },
-                        "additionalProperties": false
+                            "additionalProperties": false
+                        }
                     },
                     "product": {
                         "type": "object",
@@ -136,17 +151,21 @@
                             }
                         }
                     },
-                    "datasetId": {
-                        "type": ["string"],
-                        "annotation": {
-                            "Synonyms": "",
-                            "Description": "",
-                            "URI": "[value]",
-                            "Required": "[value]",
-                            "Example": "",
-                            "Comments": ""
+                    "datasetIds": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "string",
+                            "annotation": {
+                                "Synonyms": "",
+                                "Description": "",
+                                "URI": "[value]",
+                                "Required": "[value]",
+                                "Example": "",
+                                "Comments": ""
+                            }
                         }
-                    }  
+                    } 
                 },
                 "additionalProperties": false
             }
