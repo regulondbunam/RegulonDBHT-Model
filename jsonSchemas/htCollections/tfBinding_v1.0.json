@@ -117,6 +117,9 @@
                     "strand": {
                         "type": ["string", "null"]
                     },
+                    "sequence": {
+                        "type": ["string", "null"]
+                    },
                     "datasetIds": {
                         "type": "array",
                         "uniqueItems": true,

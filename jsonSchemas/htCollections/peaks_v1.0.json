@@ -26,22 +26,13 @@
                                 },
                                 "distanceTo": {
                                     "type": ["number"]
+                                },
+                                "productName": {
+                                    "type": ["string"]
                                 }
                             },
                             "additionalProperties": false
                         }
-                    },
-                    "product": {
-                        "type": "object",
-                        "properties": {
-                            "_id": {
-                                "type": ["string"]
-                            },
-                            "name": {
-                                "type": ["string"]
-                            }
-                        },
-                        "additionalProperties": false
                     },
                     "chromosome": {
                         "type": ["string", "null"]

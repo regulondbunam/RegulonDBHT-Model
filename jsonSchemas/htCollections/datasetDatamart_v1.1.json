@@ -162,14 +162,14 @@
                     "linkedDataset": {
                         "type": "object",
                         "properties": {
-                            "controlId": {
+                            "experimentId": {
                                 "type": "array",
                                 "uniqueItems": true,
                                 "items": {
                                     "type": "string"
                                 }
                             },
-                            "experimentId": {
+                            "controlId": {
                                 "type": "array",
                                 "uniqueItems": true,
                                 "items": {
@@ -230,8 +230,12 @@
                                 },
                                 "aerationSpeed": {
                                     "type": "string"
+                                },
+                                "mediumSupplements": {
+                                    "type": "string"
                                 }
-                            }
+                            },
+                            "additionalProperties": false
                         }
                     },
                     "releaseDataControl": {
@@ -329,6 +333,12 @@
                             }
                         },
                         "additionalProperties": false
+                    },
+                    "fivePrimeEnrichment": {
+                        "type": ["string"]
+                    },
+                    "assemblyGenomeId": {
+                        "type": ["string"]
                     }
                 }
             }
