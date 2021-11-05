@@ -1,0 +1,82 @@
+{
+    "transcriptionStartSite": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "datasetIds"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": ["string"]
+                    },
+                    "chromosome": {
+                        "type": ["string"]
+                    },
+                    "leftEndPosition": {
+                        "type": ["number"]
+                    },
+                    "rightEndPosition": {
+                        "type": ["number"]
+                    },
+                    "pos_1": {
+                        "type": ["number"]
+                    },
+                    "strand": {
+                        "type": ["string"]
+                    },
+                    "closestGenes": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "_id": {
+                                    "type": ["string"]
+                                },
+                                "name": {
+                                    "type": ["string"]
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "promoter": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": ["string"]
+                            },
+                            "name": {
+                                "type": ["string"]
+                            },
+                            "strand": {
+                                "type": ["string"]
+                            },
+                            "pos+1": {
+                                "type": ["number"]
+                            },
+                            "sigma": {
+                                "type": ["string"]
+                            },
+                            "confidenceLevel": {
+                                "type": ["string"]
+                            }
+                        }
+                    },
+                    "datasetIds": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": ["string"]
+                        }
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}
