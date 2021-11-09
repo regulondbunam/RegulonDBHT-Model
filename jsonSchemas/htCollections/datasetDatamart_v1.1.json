@@ -1,42 +1,66 @@
 {
-    "datasetDatamart": {
+    "dataset": {
         "validator": {
             "$jsonSchema": {
                 "type": "object",
                 "required": [
-                    "datasetID",
+                    "_id",
                     "publication",
                     "objectTested",
                     "sourceSerie"
                 ],
                 "properties": {
-                    "datasetID": {
+                    "_id": {
                         "type": "string"
                     },
                     "publication": {
                         "type": "object",
                         "properties": {
                             "pmid": {
-                                "type": "number"
+                                "type": [
+                                    "number",
+                                    "null"
+                                ]
                             },
                             "doi": {
-                                "type": ["string","null"]
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "abstract": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "authors": {
-                                "type": "array",
+                                "type": [
+                                    "array",
+                                    "null"
+                                ],
                                 "uniqueItems": true,
                                 "items": {
                                     "type": "string"
                                 }
                             },
                             "title": {
-                                "type": "string"
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "date": {
-                                "type": "string"
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "pmcid": {
-                                "type": ["string","null"]
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             }
                         },
                         "additionalProperties": false
@@ -64,17 +88,24 @@
                                     "type": "object",
                                     "properties": {
                                         "_id": {
-                                            "type": [ "string"]
+                                            "type": [
+                                                "string"
+                                            ]
                                         },
                                         "name": {
-                                            "type": ["string"]
+                                            "type": [
+                                                "string"
+                                            ]
                                         }
                                     },
                                     "additionalProperties": false
                                 }
                             },
                             "summary": {
-                                "type": ["string", null]
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "activeConformations": {
                                 "type": "array",
@@ -84,28 +115,40 @@
                                 }
                             },
                             "externalCrossReferences": {
-								"type": "array",
-								"uniqueItems": true,
-								"items": {
-									"type": "object",
-									"properties": {
-										"externalCrossReferenceId": {
-											"type": ["string", "null"],
-											"pattern": "^RDB[A-Z0-9_]{5}[A-Z]{3}[0-9A-Z]{5}$"
-										},
-										"externalCrossReferenceName": {
-											"type": ["string", "null"]
-										},
-										"objectId": {
-											"type": ["string", "null"]
-										},
-										"url": {
-											"type": ["string", "null"]
-										}
-									},
-									"additionalProperties": false
-								}
-							}
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "externalCrossReferenceId": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "pattern": "^RDB[A-Z0-9_]{5}[A-Z]{3}[0-9A-Z]{5}$"
+                                        },
+                                        "externalCrossReferenceName": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "objectId": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "url": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            }
                         },
                         "additionalProperties": false
                     },
@@ -113,25 +156,46 @@
                         "type": "object",
                         "properties": {
                             "sourceId": {
-                                "type": "string"
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "sourceName": {
-                                "type": ["string", "null"]
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "title": {
-                                "type": ["string", "null"]
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "platformID": {
-                                "type": "string"
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "platformTitle": {
-                                "type": "string"
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "strategy": {
-                                "type": ["string", "null"]
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "method": {
-                                "type": "string"
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             }
                         },
                         "additionalProperties": false
@@ -140,21 +204,30 @@
                         "type": "object",
                         "properties": {
                             "experimentId": {
-                                "type": "array",
+                                "type": [
+                                    "array",
+                                    "null"
+                                ],
                                 "uniqueItems": true,
                                 "items": {
                                     "type": "string"
                                 }
                             },
                             "controlId": {
-                                "type": "array",
+                                "type": [
+                                    "array",
+                                    "null"
+                                ],
                                 "uniqueItems": true,
                                 "items": {
                                     "type": "string"
                                 }
                             },
                             "title": {
-                                "type": "string"
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             }
                         },
                         "additionalProperties": false
@@ -163,14 +236,20 @@
                         "type": "object",
                         "properties": {
                             "controlId": {
-                                "type": "array",
+                                "type": [
+                                    "array",
+                                    "null"
+                                ],
                                 "uniqueItems": true,
                                 "items": {
                                     "type": "string"
                                 }
                             },
                             "experimentId": {
-                                "type": "array",
+                                "type": [
+                                    "array",
+                                    "null"
+                                ],
                                 "uniqueItems": true,
                                 "items": {
                                     "type": "string"
@@ -183,12 +262,15 @@
                         "additionalProperties": false
                     },
                     "referenceGenome": {
-                        "type": "string"
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     },
                     "datasetType": {
                         "type": "string"
                     },
-                    "temporalDatasetID": {
+                    "temporalID": {
                         "type": "string"
                     },
                     "growthConditions": {
@@ -238,10 +320,14 @@
                         "type": "object",
                         "properties": {
                             "date": {
-                                "type": ["string"]
+                                "type": [
+                                    "string"
+                                ]
                             },
                             "version": {
-                                "type": ["string"]
+                                "type": [
+                                    "string"
+                                ]
                             }
                         },
                         "additionalProperties": false
@@ -285,23 +371,38 @@
                                 },
                                 "additionalProperties": false
                             },
-                            "totalOftfbs": {
+                            "totalOfTFBS": {
                                 "type": "object",
                                 "properties": {
                                     "inDataset": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     },
                                     "inRDBClassic": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     },
                                     "sharedItems": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     },
                                     "notInRDB": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     },
                                     "notInDataset": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     }
                                 },
                                 "additionalProperties": false
@@ -310,25 +411,52 @@
                                 "type": "object",
                                 "properties": {
                                     "inDataset": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     },
                                     "inRDBClassic": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     },
                                     "sharedItems": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     },
                                     "notInRDB": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     },
                                     "notInDataset": {
-                                        "type": ["number", "null"]
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
                                     }
                                 },
                                 "additionalProperties": false
                             }
                         },
                         "additionalProperties": false
+                    },
+                    "assemblyGenomeId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "fivePrimeEnrichment": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     }
                 }
             }

@@ -4,22 +4,31 @@
             "$jsonSchema": {
                 "type": "object",
                 "required": [
-                    "siteId",
-                    "datasetIds",
-                    "closestGenes"
+                    "_id",
+                    "datasetIds"
                 ],
                 "properties": {
-                    "siteId": {
-                        "type": ["string"]
+                    "_id": {
+                        "type": [
+                            "string"
+                        ]
                     },
                     "chromosome": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     },
                     "chrLeftPosition": {
-                        "type": ["number", "null"]
+                        "type": [
+                            "number",
+                            "null"
+                        ]
                     },
                     "chrRightPosition": {
-                        "type": ["number", "null"]
+                        "type": [
+                            "number",
+                            "null"
+                        ]
                     },
                     "closestGenes": {
                         "type": "array",
@@ -28,13 +37,32 @@
                             "type": "object",
                             "properties": {
                                 "_id": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string"
+                                    ]
                                 },
                                 "name": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string"
+                                    ]
                                 },
                                 "distanceTo": {
-                                    "type": ["number"]
+                                    "type": [
+                                        "number"
+                                    ]
+                                },
+                                "productName": {
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    }
                                 }
                             },
                             "additionalProperties": false
@@ -44,10 +72,14 @@
                         "type": "object",
                         "properties": {
                             "_id": {
-                                "type": ["string"]
+                                "type": [
+                                    "string"
+                                ]
                             },
                             "name": {
-                                "type": ["string"]
+                                "type": [
+                                    "string"
+                                ]
                             }
                         },
                         "additionalProperties": false
@@ -59,22 +91,40 @@
                             "type": "object",
                             "properties": {
                                 "tfbsLeftPosition": {
-                                    "type": ["number", "null"]
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
                                 },
                                 "tfbsRightPosition": {
-                                    "type": ["number", "null"]
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
                                 },
                                 "relativeGeneDistance": {
-                                    "type": ["number", "null"]
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
                                 },
                                 "relativeTSSDistance": {
-                                    "type": ["number", "null"]
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
                                 },
                                 "strand": {
-                                    "type": ["string", "null"]
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 },
                                 "sequence": {
-                                    "type": ["string", "null"]
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             },
                             "additionalProperties": false
@@ -87,35 +137,65 @@
                             "type": "object",
                             "properties": {
                                 "tfbsLeftPosition": {
-                                    "type": ["number", "null"]
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
                                 },
                                 "tfbsRightPosition": {
-                                    "type": ["number", "null"]
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
                                 },
                                 "relativeGeneDistance": {
-                                    "type": ["number", "null"]
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
                                 },
                                 "relativeTSSDistance": {
-                                    "type": ["number", "null"]
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
                                 },
                                 "strand": {
-                                    "type": ["string", "null"]
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 },
                                 "sequence": {
-                                    "type": ["string", "null"]
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             },
                             "additionalProperties": false
                         }
                     },
                     "name": {
-                        "type": ["string", "null"]
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     },
                     "score": {
-                        "type": ["number", "null"]
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    },
+                    "sequence": {
+                        "type": "string"
                     },
                     "strand": {
-                        "type": ["string", "null"]
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     },
                     "datasetIds": {
                         "type": "array",
@@ -123,6 +203,9 @@
                         "items": {
                             "type": "string"
                         }
+                    },
+                    "temporalID": {
+                        "type": "string"
                     }
                 },
                 "additionalProperties": false

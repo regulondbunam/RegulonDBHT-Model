@@ -4,15 +4,19 @@
             "$jsonSchema": {
                 "type": "object",
                 "required": [
-                    "datasetId",
+                    "_id",
                     "tfBindingAuthorsData"
                 ],
                 "properties": {
-                    "tfBindingAuthorsData": {
-                        "type": ["string"]
+                    "_id": {
+                        "type": [
+                            "string"
+                        ]
                     },
-                    "datasetId": {
-                        "type": ["string"]
+                    "tfBindingAuthorsData": {
+                        "type": [
+                            "string"
+                        ]
                     }
                 },
                 "additionalProperties": false
