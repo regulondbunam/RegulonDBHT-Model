@@ -46,26 +46,10 @@
                                             "null"
                                         ]
                                     }
-                                },
-                                "additionalProperties": false
-                            }
-                        }
-                    },
-                    "product": {
-                        "type": "object",
-                        "properties": {
-                            "_id": {
-                                "type": [
-                                    "string"
-                                ]
+                                }
                             },
-                            "name": {
-                                "type": [
-                                    "string"
-                                ]
-                            }
-                        },
-                        "additionalProperties": false
+                            "additionalProperties": false
+                        }
                     },
                     "chromosome": {
                         "type": [
