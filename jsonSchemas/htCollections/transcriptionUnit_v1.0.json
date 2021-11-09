@@ -1,0 +1,73 @@
+{
+    "transcriptionUnit": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "datasetIds"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": ["string"]
+                    },
+                    "chromosome": {
+                        "type": ["string"]
+                    },
+                    "leftEndPosition": {
+                        "type": ["number"]
+                    },
+                    "rightEndPosition": {
+                        "type": ["number"]
+                    },
+                    "name": {
+                        "type": ["string"]
+                    },
+                    "strand": {
+                        "type": ["string"]
+                    },
+                    "length": {
+                        "type": ["number"]
+                    },
+                    "termType": {
+                        "type": ["string"]
+                    },
+                    "genes": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "_id": {
+                                    "type": ["string"]
+                                },
+                                "name": {
+                                    "type": ["string"]
+                                },
+                                "bnumber": {
+                                    "type": ["string"]
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "phantom": {
+                            "type": ["number"]
+                        },
+                        "pseudo": {
+                            "type": ["number"]
+                        },
+                        "datasetIds": {
+                            "type": "array",
+                            "uniqueItems": true,
+                            "items": {
+                                "type": ["string"]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}

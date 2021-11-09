@@ -386,7 +386,7 @@
                     "linkedDataset": {
                         "type": "object",
                         "properties": {
-                            "controlId": {
+                            "experimentId": {
                                 "type": "array",
                                 "uniqueItems": true,
                                 "items": {
@@ -401,7 +401,7 @@
                                     "Comments": ""
                                 }
                             },
-                            "experimentId": {
+                            "controlId": {
                                 "type": "array",
                                 "uniqueItems": true,
                                 "items": {
@@ -598,8 +598,20 @@
                                         "Example": "",
                                         "Comments": ""
                                     }
+                                },
+                                "mediumSupplements": {
+                                    "type": "string",
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
                                 }
-                            }
+                            },
+                            "additionalProperties": false
                         }
                     },
                     "releaseDataControl": {
@@ -818,6 +830,28 @@
                             }
                         },
                         "additionalProperties": false
+                    },
+                    "fivePrimeEnrichment": {
+                        "type": ["string"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "assemblyGenomeId": {
+                        "type": ["string"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
                     }
                 },
                 "additionalProperties": false

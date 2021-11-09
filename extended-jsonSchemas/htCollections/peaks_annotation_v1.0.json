@@ -59,38 +59,21 @@
                                         "Example": "",
                                         "Comments": ""
                                     }
+                                },
+                                "productName": {
+                                    "type": ["string"],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
                                 }
                             },
                             "additionalProperties": false
                         }
-                    },
-                    "product": {
-                        "type": "object",
-                        "properties": {
-                            "_id": {
-                                "type": ["string"],
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
-                                }
-                            },
-                            "name": {
-                                "type": ["string"],
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
-                                }
-                            }
-                        },
-                        "additionalProperties": false
                     },
                     "chromosome": {
                         "type": ["string", "null"],

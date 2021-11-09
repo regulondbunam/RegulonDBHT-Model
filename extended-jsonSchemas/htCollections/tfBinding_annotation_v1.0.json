@@ -312,6 +312,17 @@
                             "Comments": ""
                         }
                     },
+                    "sequence": {
+                        "type": ["string"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
                     "datasetIds": {
                         "type": "array",
                         "uniqueItems": true,
