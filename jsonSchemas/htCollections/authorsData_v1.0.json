@@ -13,6 +13,13 @@
                             "string"
                         ]
                     },
+                    "datasetIds": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "string"
+                        }
+                    },
                     "tfBindingAuthorsData": {
                         "type": [
                             "string"
