@@ -206,6 +206,9 @@
                     },
                     "temporalID": {
                         "type": "string"
+                    },
+                    "nameCollection": {
+                        "type": "string"
                     }
                 },
                 "additionalProperties": false
