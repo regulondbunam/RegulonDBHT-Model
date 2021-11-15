@@ -208,7 +208,7 @@
                                     "array",
                                     "null"
                                 ],
-                                "uniqueItems": true,
+                                "uniqueItems": false,
                                 "items": {
                                     "type": "string"
                                 }
@@ -218,7 +218,7 @@
                                     "array",
                                     "null"
                                 ],
-                                "uniqueItems": true,
+                                "uniqueItems": false,
                                 "items": {
                                     "type": "string"
                                 }
@@ -240,7 +240,7 @@
                                     "array",
                                     "null"
                                 ],
-                                "uniqueItems": true,
+                                "uniqueItems": false,
                                 "items": {
                                     "type": "string"
                                 }
@@ -250,7 +250,7 @@
                                     "array",
                                     "null"
                                 ],
-                                "uniqueItems": true,
+                                "uniqueItems": false,
                                 "items": {
                                     "type": "string"
                                 }
