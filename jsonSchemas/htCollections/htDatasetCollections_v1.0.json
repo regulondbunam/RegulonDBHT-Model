@@ -1,0 +1,54 @@
+{
+    "htDatasetCollections": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "releaseDate",
+                    "title"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": ["string"]
+                    },
+                    "releaseDate": {
+                        "type": ["string"]
+                    },
+                    "title": {
+                        "type": ["string"]
+                    },
+                    "description": {
+                        "type": ["string"]
+                    },
+                    "responsables": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": ["string"]
+                                },
+                                "email": {
+                                    "type": ["string"]
+                                }
+                            }
+                        }
+                    },
+                    "type": {
+                        "type": ["string"]
+                    },
+                    "summary": {
+                        "type": ["string"]
+                    },
+                    "methodology": {
+                        "type": ["string"]
+                    }
+                }
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}

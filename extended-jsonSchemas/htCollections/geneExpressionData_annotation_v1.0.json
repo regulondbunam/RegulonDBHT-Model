@@ -1,0 +1,153 @@
+{
+    "transcriptionUnit": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "datasetIds"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "datasetIds": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": [
+                                "string"
+                            ],
+                            "annotation": {
+                                "Synonyms": "",
+                                "Description": "",
+                                "URI": "[value]",
+                                "Required": "[value]",
+                                "Example": "",
+                                "Comments": ""
+                            }
+                        }
+                    },
+                    "gene": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": [
+                                    "string"
+                                ],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "name": {
+                                "type": [
+                                    "string"
+                                ],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "synonyms": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": [
+                                        "string"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                }
+                            },
+                            "bnumber": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "tpm": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "fkpm": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}

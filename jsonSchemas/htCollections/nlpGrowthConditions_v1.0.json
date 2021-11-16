@@ -1,0 +1,412 @@
+{
+    "nlpGrowthConditions": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": [
+                            "string"
+                        ]
+                    },
+                    "organism": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "score": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "geneticBackground": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "score": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "medium": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "score": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "aeration": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "score": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "temperature": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "score": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "ph": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "score": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "pressure": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "score": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "opticalDensity": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "score": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "growthPhase": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "score": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "growthRate": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "score": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "vesselType": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "score": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "aerationSpeed": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "score": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "mediumSupplements": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "score": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "additionalProperties": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "value": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "value": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "score": {
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "associatedPhrase": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}

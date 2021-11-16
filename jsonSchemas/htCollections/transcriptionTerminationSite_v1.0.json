@@ -1,0 +1,113 @@
+{
+    "transcriptionTerminationSite": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "datasetIds"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": ["string"]
+                    },
+                    "chromosome": {
+                        "type": ["string"]
+                    },
+                    "leftEndPosition": {
+                        "type": ["number"]
+                    },
+                    "rightEndPosition": {
+                        "type": ["number"]
+                    },
+                    "name": {
+                        "type": ["string"]
+                    },
+                    "strand": {
+                        "type": ["string"]
+                    },
+                    "closestGenes": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "item": {
+                            "type": "object",
+                            "properties": {
+                                "_id": {
+                                    "type": ["string"]
+                                },
+                                "name": {
+                                    "type": ["string"]
+                                },
+                                "distanteTo": {
+                                    "type": ["number"]
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "terminator": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": ["string"]
+                            },
+                            "name": {
+                                "type": ["string"]
+                            },
+                            "transcriptionUnit": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": ["string"]
+                                        },
+                                        "name": {
+                                            "type": ["string"]
+                                        },
+                                        "promoter": {
+                                            "type": "object",
+                                            "properties": {
+                                                "_id": {
+                                                    "type": ["string"]
+                                                },
+                                                "name": {
+                                                    "type": ["string"]
+                                                },
+                                                "sequence": {
+                                                    "type": ["string"]
+                                                },
+                                                "leftEndPosition": {
+                                                    "type": ["number"]
+                                                },
+                                                "rightEndPosition": {
+                                                    "type": ["number"]
+                                                },
+                                                "strand": {
+                                                    "type": ["number"]
+                                                }
+                                            },
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "datasetIds": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": ["string"]
+                        }
+                    }
+                }
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}
