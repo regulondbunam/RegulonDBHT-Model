@@ -379,6 +379,20 @@
                                     "Example": "",
                                     "Comments": ""
                                 }
+                            },
+                            "srrId": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
                             }
                         },
                         "additionalProperties": false
@@ -844,6 +858,35 @@
                     },
                     "assemblyGenomeId": {
                         "type": ["string"],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "nlpGrowthConditionsId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "geneExpressionFiltered": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "enum": ["0", "1"],
                         "annotation": {
                             "Synonyms": "",
                             "Description": "",

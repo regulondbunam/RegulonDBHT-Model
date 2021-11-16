@@ -228,6 +228,12 @@
                                     "string",
                                     "null"
                                 ]
+                            },
+                            "srrId": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             }
                         },
                         "additionalProperties": false
@@ -311,6 +317,9 @@
                                     "type": "string"
                                 },
                                 "aerationSpeed": {
+                                    "type": "string"
+                                },
+                                "mediumSupplements": {
                                     "type": "string"
                                 }
                             }
@@ -457,6 +466,19 @@
                             "string",
                             "null"
                         ]
+                    },
+                    "nlpGrowthConditionsId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "geneExpressionFiltered": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "enum": ["0", "1"]
                     }
                 }
             }
