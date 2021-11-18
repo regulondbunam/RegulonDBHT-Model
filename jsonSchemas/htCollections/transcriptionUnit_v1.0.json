@@ -39,35 +39,42 @@
                             "type": "object",
                             "properties": {
                                 "_id": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string"
+                                    ]
                                 },
                                 "name": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string"
+                                    ]
                                 },
                                 "bnumber": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string"
+                                    ]
                                 }
                             },
                             "additionalProperties": false
-                        },
-                        "phantom": {
-                            "type": ["number"]
-                        },
-                        "pseudo": {
-                            "type": ["number"]
-                        },
-                        "datasetIds": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "items": {
-                                "type": ["string"]
-                            }
-                        },
-                        "temporalId": {
+                        }
+                    },
+                    "phantom": {
+                        "type": ["number"]
+                    },
+                    "pseudo": {
+                        "type": ["number"]
+                    },
+                    "datasetIds": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
                             "type": "string"
                         }
+                    },
+                    "temporalId": {
+                        "type": "string"
                     }
-                }
+                },
+                "additionalProperties": false
             }
         },
         "validationLevel": "strict",

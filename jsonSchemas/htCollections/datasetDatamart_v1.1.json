@@ -6,7 +6,6 @@
                 "required": [
                     "_id",
                     "publication",
-                    "objectTested",
                     "sourceSerie"
                 ],
                 "properties": {
