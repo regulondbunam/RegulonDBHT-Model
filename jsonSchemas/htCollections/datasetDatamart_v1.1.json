@@ -173,7 +173,7 @@
                                     "null"
                                 ]
                             },
-                            "platformID": {
+                            "platformId": {
                                 "type": [
                                     "string",
                                     "null"
@@ -276,7 +276,7 @@
                     "datasetType": {
                         "type": "string"
                     },
-                    "temporalID": {
+                    "temporalId": {
                         "type": "string"
                     },
                     "growthConditions": {
