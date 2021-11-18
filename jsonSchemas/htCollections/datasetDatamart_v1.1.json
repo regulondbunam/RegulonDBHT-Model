@@ -101,7 +101,7 @@
                                     "additionalProperties": false
                                 }
                             },
-                            "summary": {
+                            "note": {
                                 "type": [
                                     "string",
                                     "null"
@@ -478,7 +478,10 @@
                             "string",
                             "null"
                         ],
-                        "enum": ["0", "1"]
+                        "enum": [
+                            "0",
+                            "1"
+                        ]
                     }
                 }
             }
