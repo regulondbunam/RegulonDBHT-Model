@@ -1,0 +1,59 @@
+{
+    "geneExpression": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "datasetIds"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": ["string"]
+                    },
+                    "datasetIds": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": ["string"]
+                        }
+                    },
+                    "gene": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": ["string"]
+                            },
+                            "name": {
+                                "type": ["string"]
+                            },
+                            "synonyms": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": ["string"]
+                                }
+                            },
+                            "bnumber": {
+                                "type": ["string"]
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "count": {
+                        "type": ["number"]
+                    },
+                    "tpm": {
+                        "type": ["number"]
+                    },
+                    "fkpm": {
+                        "type": ["number"]
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}
