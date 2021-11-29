@@ -45,57 +45,61 @@
                             "additionalProperties": false
                         }
                     },
-                    "terminator": {
-                        "type": "object",
-                        "properties": {
-                            "_id": {
-                                "type": ["string"]
-                            },
-                            "name": {
-                                "type": ["string"]
-                            },
-                            "transcriptionUnit": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "_id": {
-                                            "type": ["string"]
-                                        },
-                                        "name": {
-                                            "type": ["string"]
-                                        },
-                                        "promoter": {
-                                            "type": "object",
-                                            "properties": {
-                                                "_id": {
-                                                    "type": ["string"]
-                                                },
-                                                "name": {
-                                                    "type": ["string"]
-                                                },
-                                                "sequence": {
-                                                    "type": ["string"]
-                                                },
-                                                "leftEndPosition": {
-                                                    "type": ["number"]
-                                                },
-                                                "rightEndPosition": {
-                                                    "type": ["number"]
-                                                },
-                                                "strand": {
-                                                    "type": ["number"]
-                                                }
+                    "terminators": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "_id": {
+                                    "type": ["string"]
+                                },
+                                "name": {
+                                    "type": ["string"]
+                                },
+                                "transcriptionUnit": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "_id": {
+                                                "type": ["string"]
                                             },
-                                            "additionalProperties": false
-                                        }
-                                    },
-                                    "additionalProperties": false
+                                            "name": {
+                                                "type": ["string"]
+                                            },
+                                            "promoter": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "_id": {
+                                                        "type": ["string"]
+                                                    },
+                                                    "name": {
+                                                        "type": ["string"]
+                                                    },
+                                                    "sequence": {
+                                                        "type": ["string"]
+                                                    },
+                                                    "leftEndPosition": {
+                                                        "type": ["number"]
+                                                    },
+                                                    "rightEndPosition": {
+                                                        "type": ["number"]
+                                                    },
+                                                    "strand": {
+                                                        "type": ["number"]
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    }
                                 }
-                            }
-                        },
-                        "additionalProperties": false
+                            },
+                            "additionalProperties": false
+                        }
                     },
                     "datasetIds": {
                         "type": "array",
@@ -103,6 +107,9 @@
                         "items": {
                             "type": ["string"]
                         }
+                    },
+                    "temporalId": {
+                        "type": ["string"]
                     }
                 }
             }

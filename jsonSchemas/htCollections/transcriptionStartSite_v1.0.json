@@ -43,26 +43,31 @@
                         }
                     },
                     "promoter": {
-                        "type": "object",
-                        "properties": {
-                            "_id": {
-                                "type": ["string"]
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "_id": {
+                                    "type": ["string"]
+                                },
+                                "name": {
+                                    "type": ["string"]
+                                },
+                                "strand": {
+                                    "type": ["string"]
+                                },
+                                "pos+1": {
+                                    "type": ["number"]
+                                },
+                                "sigma": {
+                                    "type": ["string"]
+                                },
+                                "confidenceLevel": {
+                                    "type": ["string"]
+                                }
                             },
-                            "name": {
-                                "type": ["string"]
-                            },
-                            "strand": {
-                                "type": ["string"]
-                            },
-                            "pos+1": {
-                                "type": ["number"]
-                            },
-                            "sigma": {
-                                "type": ["string"]
-                            },
-                            "confidenceLevel": {
-                                "type": ["string"]
-                            }
+                            "additionalProperties": false
                         }
                     },
                     "datasetIds": {
@@ -71,6 +76,9 @@
                         "items": {
                             "type": ["string"]
                         }
+                    },
+                    "temporalId": {
+                        "type": ["string"]
                     }
                 },
                 "additionalProperties": false

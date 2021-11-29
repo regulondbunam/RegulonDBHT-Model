@@ -51,38 +51,29 @@
                                         "number"
                                     ]
                                 },
-                                "productName": {
-                                    "type": [
-                                        "array",
-                                        "null"
-                                    ],
+                                "transcriptionUnits": {
+                                    "type": "array",
                                     "uniqueItems": true,
                                     "items": {
-                                        "type": [
-                                            "string",
-                                            "null"
-                                        ]
+                                        "type": "object",
+                                        "properties": {
+                                            "_id": {
+                                                "type": [
+                                                    "string"
+                                                ]
+                                            },
+                                            "name": {
+                                                "type": [
+                                                    "string"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": false
                                     }
                                 }
                             },
                             "additionalProperties": false
                         }
-                    },
-                    "transcriptionUnit": {
-                        "type": "object",
-                        "properties": {
-                            "_id": {
-                                "type": [
-                                    "string"
-                                ]
-                            },
-                            "name": {
-                                "type": [
-                                    "string"
-                                ]
-                            }
-                        },
-                        "additionalProperties": false
                     },
                     "foundClassicRIs": {
                         "type": "array",
