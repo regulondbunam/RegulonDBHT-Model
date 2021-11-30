@@ -38,18 +38,34 @@
                             "properties": {
                                 "_id": {
                                     "type": [
-                                        "string"
+                                        "string",
+                                        "null"
                                     ]
                                 },
                                 "name": {
                                     "type": [
-                                        "string"
+                                        "string",
+                                        "null"
                                     ]
                                 },
                                 "distanceTo": {
                                     "type": [
-                                        "number"
+                                        "number",
+                                        "null"
                                     ]
+                                },
+                                "productName": {
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    }
                                 },
                                 "transcriptionUnits": {
                                     "type": "array",
@@ -59,12 +75,14 @@
                                         "properties": {
                                             "_id": {
                                                 "type": [
-                                                    "string"
+                                                    "string",
+                                                    "null"
                                                 ]
                                             },
                                             "name": {
                                                 "type": [
-                                                    "string"
+                                                    "string",
+                                                    "null"
                                                 ]
                                             }
                                         },

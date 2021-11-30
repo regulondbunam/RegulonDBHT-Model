@@ -21,17 +21,20 @@
                             "properties": {
                                 "_id": {
                                     "type": [
-                                        "string"
+                                        "string",
+                                        "null"
                                     ]
                                 },
                                 "name": {
                                     "type": [
-                                        "string"
+                                        "string",
+                                        "null"
                                     ]
                                 },
                                 "distanceTo": {
                                     "type": [
-                                        "number"
+                                        "number",
+                                        "null"
                                     ]
                                 },
                                 "productName": {
@@ -45,6 +48,28 @@
                                             "string",
                                             "null"
                                         ]
+                                    }
+                                },
+                                "transcriptionUnits": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "_id": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "name": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": false
                                     }
                                 }
                             },

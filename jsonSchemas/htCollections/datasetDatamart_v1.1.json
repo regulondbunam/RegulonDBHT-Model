@@ -68,10 +68,16 @@
                         "type": "object",
                         "properties": {
                             "_id": {
-                                "type": "string"
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "name": {
-                                "type": "string"
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "synonyms": {
                                 "type": "array",

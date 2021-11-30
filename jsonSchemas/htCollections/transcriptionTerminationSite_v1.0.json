@@ -9,22 +9,34 @@
                 ],
                 "properties": {
                     "_id": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     },
                     "chromosome": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     },
                     "leftEndPosition": {
-                        "type": ["number"]
+                        "type": [
+                            "number"
+                        ]
                     },
                     "rightEndPosition": {
-                        "type": ["number"]
+                        "type": [
+                            "number"
+                        ]
                     },
                     "name": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     },
                     "strand": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     },
                     "closestGenes": {
                         "type": "array",
@@ -33,13 +45,57 @@
                             "type": "object",
                             "properties": {
                                 "_id": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 },
                                 "name": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 },
-                                "distanteTo": {
-                                    "type": ["number"]
+                                "distanceTo": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "productName": {
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    }
+                                },
+                                "transcriptionUnits": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "_id": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "name": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    }
                                 }
                             },
                             "additionalProperties": false
@@ -52,10 +108,14 @@
                             "type": "object",
                             "properties": {
                                 "_id": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string"
+                                    ]
                                 },
                                 "name": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string"
+                                    ]
                                 },
                                 "transcriptionUnit": {
                                     "type": "array",
@@ -64,31 +124,47 @@
                                         "type": "object",
                                         "properties": {
                                             "_id": {
-                                                "type": ["string"]
+                                                "type": [
+                                                    "string"
+                                                ]
                                             },
                                             "name": {
-                                                "type": ["string"]
+                                                "type": [
+                                                    "string"
+                                                ]
                                             },
                                             "promoter": {
                                                 "type": "object",
                                                 "properties": {
                                                     "_id": {
-                                                        "type": ["string"]
+                                                        "type": [
+                                                            "string"
+                                                        ]
                                                     },
                                                     "name": {
-                                                        "type": ["string"]
+                                                        "type": [
+                                                            "string"
+                                                        ]
                                                     },
                                                     "sequence": {
-                                                        "type": ["string"]
+                                                        "type": [
+                                                            "string"
+                                                        ]
                                                     },
                                                     "leftEndPosition": {
-                                                        "type": ["number"]
+                                                        "type": [
+                                                            "number"
+                                                        ]
                                                     },
                                                     "rightEndPosition": {
-                                                        "type": ["number"]
+                                                        "type": [
+                                                            "number"
+                                                        ]
                                                     },
                                                     "strand": {
-                                                        "type": ["number"]
+                                                        "type": [
+                                                            "number"
+                                                        ]
                                                     }
                                                 },
                                                 "additionalProperties": false
@@ -105,11 +181,15 @@
                         "type": "array",
                         "uniqueItems": true,
                         "items": {
-                            "type": ["string"]
+                            "type": [
+                                "string"
+                            ]
                         }
                     },
                     "temporalId": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     }
                 }
             }

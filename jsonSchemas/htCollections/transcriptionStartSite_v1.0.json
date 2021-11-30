@@ -9,22 +9,34 @@
                 ],
                 "properties": {
                     "_id": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     },
                     "chromosome": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     },
                     "leftEndPosition": {
-                        "type": ["number"]
+                        "type": [
+                            "number"
+                        ]
                     },
                     "rightEndPosition": {
-                        "type": ["number"]
+                        "type": [
+                            "number"
+                        ]
                     },
-                    "pos_1": {
-                        "type": ["number"]
+                    "pos_1": {
+                        "type": [
+                            "number"
+                        ]
                     },
                     "strand": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     },
                     "closestGenes": {
                         "type": "array",
@@ -33,10 +45,57 @@
                             "type": "object",
                             "properties": {
                                 "_id": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 },
                                 "name": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "distanceTo": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "productName": {
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    }
+                                },
+                                "transcriptionUnits": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "_id": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "name": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    }
                                 }
                             },
                             "additionalProperties": false
@@ -45,26 +104,44 @@
                     "promoter": {
                         "type": "array",
                         "uniqueItems": true,
-                        "items": {
+                        "items": {
                             "type": "object",
                             "properties": {
                                 "_id": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 },
                                 "name": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 },
                                 "strand": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 },
                                 "pos+1": {
-                                    "type": ["number"]
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
                                 },
                                 "sigma": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 },
                                 "confidenceLevel": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             },
                             "additionalProperties": false
@@ -74,11 +151,15 @@
                         "type": "array",
                         "uniqueItems": true,
                         "items": {
-                            "type": ["string"]
+                            "type": [
+                                "string"
+                            ]
                         }
                     },
                     "temporalId": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     }
                 },
                 "additionalProperties": false
