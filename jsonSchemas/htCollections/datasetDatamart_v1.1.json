@@ -68,16 +68,10 @@
                         "type": "object",
                         "properties": {
                             "_id": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
+                                "type": "string"
                             },
                             "name": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
+                                "type": "string"
                             },
                             "synonyms": {
                                 "type": "array",
@@ -326,6 +320,13 @@
                                 },
                                 "mediumSupplements": {
                                     "type": "string"
+                                },
+                                "otherTherms": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "string"
+                                    }
                                 }
                             }
                         }

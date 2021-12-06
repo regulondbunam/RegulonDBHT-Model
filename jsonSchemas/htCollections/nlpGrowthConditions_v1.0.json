@@ -35,6 +35,12 @@
                                         "string",
                                         "null"
                                     ]
+                                },
+                                "nameField": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             }
                         }
@@ -58,6 +64,12 @@
                                     ]
                                 },
                                 "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -89,6 +101,12 @@
                                         "string",
                                         "null"
                                     ]
+                                },
+                                "nameField": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             }
                         }
@@ -112,6 +130,12 @@
                                     ]
                                 },
                                 "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -143,6 +167,12 @@
                                         "string",
                                         "null"
                                     ]
+                                },
+                                "nameField": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             }
                         }
@@ -166,6 +196,12 @@
                                     ]
                                 },
                                 "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -197,6 +233,12 @@
                                         "string",
                                         "null"
                                     ]
+                                },
+                                "nameField": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             }
                         }
@@ -220,6 +262,12 @@
                                     ]
                                 },
                                 "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -251,6 +299,12 @@
                                         "string",
                                         "null"
                                     ]
+                                },
+                                "nameField": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             }
                         }
@@ -274,6 +328,12 @@
                                     ]
                                 },
                                 "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -305,6 +365,12 @@
                                         "string",
                                         "null"
                                     ]
+                                },
+                                "nameField": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             }
                         }
@@ -332,6 +398,12 @@
                                         "string",
                                         "null"
                                     ]
+                                },
+                                "nameField": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             }
                         }
@@ -355,6 +427,12 @@
                                     ]
                                 },
                                 "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -395,12 +473,24 @@
                                                 "string",
                                                 "null"
                                             ]
+                                        },
+                                        "nameField": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
                                         }
                                     }
                                 }
                             }
                         },
                         "additionalProperties": false
+                    },
+                    "datasetIds": {
+                        "type": "string"
+                    },
+                    "temporalId": {
+                        "type": "string"
                     }
                 },
                 "additionalProperties": false
