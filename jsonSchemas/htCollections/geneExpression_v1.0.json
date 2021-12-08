@@ -9,45 +9,73 @@
                 ],
                 "properties": {
                     "_id": {
-                        "type": ["string"]
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "temporalId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     },
                     "datasetIds": {
                         "type": "array",
                         "uniqueItems": true,
                         "items": {
-                            "type": ["string"]
+                            "type": [
+                                "string"
+                            ]
                         }
                     },
                     "gene": {
                         "type": "object",
                         "properties": {
                             "_id": {
-                                "type": ["string"]
+                                "type": [
+                                    "string"
+                                ]
                             },
                             "name": {
-                                "type": ["string"]
+                                "type": [
+                                    "string"
+                                ]
                             },
                             "synonyms": {
                                 "type": "array",
                                 "uniqueItems": true,
                                 "items": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string"
+                                    ]
                                 }
                             },
                             "bnumber": {
-                                "type": ["string"]
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             }
-                        },
-                        "additionalProperties": false
+                        }
                     },
                     "count": {
-                        "type": ["number"]
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     },
                     "tpm": {
-                        "type": ["number"]
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     },
-                    "fkpm": {
-                        "type": ["number"]
+                    "fpkm": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     }
                 },
                 "additionalProperties": false

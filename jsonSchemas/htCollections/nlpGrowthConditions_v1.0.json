@@ -30,7 +30,7 @@
                                         "null"
                                     ]
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
                                     "type": [
                                         "string",
                                         "null"
@@ -63,7 +63,7 @@
                                         "null"
                                     ]
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
                                     "type": [
                                         "string",
                                         "null"
@@ -96,7 +96,7 @@
                                         "null"
                                     ]
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
                                     "type": [
                                         "string",
                                         "null"
@@ -129,7 +129,7 @@
                                         "null"
                                     ]
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
                                     "type": [
                                         "string",
                                         "null"
@@ -162,7 +162,7 @@
                                         "null"
                                     ]
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
                                     "type": [
                                         "string",
                                         "null"
@@ -195,7 +195,7 @@
                                         "null"
                                     ]
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
                                     "type": [
                                         "string",
                                         "null"
@@ -228,7 +228,7 @@
                                         "null"
                                     ]
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
                                     "type": [
                                         "string",
                                         "null"
@@ -261,7 +261,7 @@
                                         "null"
                                     ]
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
                                     "type": [
                                         "string",
                                         "null"
@@ -294,7 +294,7 @@
                                         "null"
                                     ]
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
                                     "type": [
                                         "string",
                                         "null"
@@ -327,7 +327,7 @@
                                         "null"
                                     ]
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
                                     "type": [
                                         "string",
                                         "null"
@@ -360,7 +360,7 @@
                                         "null"
                                     ]
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
                                     "type": [
                                         "string",
                                         "null"
@@ -393,7 +393,7 @@
                                         "null"
                                     ]
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
                                     "type": [
                                         "string",
                                         "null"
@@ -426,7 +426,7 @@
                                         "null"
                                     ]
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
                                     "type": [
                                         "string",
                                         "null"
@@ -442,49 +442,56 @@
                         }
                     },
                     "additionalProperties": {
-                        "type": "object",
-                        "properties": {
-                            "name": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
-                            },
-                            "value": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "value": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
-                                        },
-                                        "score": {
-                                            "type": [
-                                                "number",
-                                                "null"
-                                            ]
-                                        },
-                                        "associatedPhrase": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
-                                        },
-                                        "nameField": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "value": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "value": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "score": {
+                                                "type": [
+                                                    "number",
+                                                    "null"
+                                                ]
+                                            },
+                                            "associatedPhrase": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "nameField": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            }
                                         }
                                     }
                                 }
-                            }
-                        },
-                        "additionalProperties": false
+                            },
+                            "additionalProperties": false
+                        }
                     },
                     "datasetIds": {
                         "type": "string"

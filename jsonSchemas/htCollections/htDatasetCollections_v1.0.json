@@ -10,16 +10,24 @@
                 ],
                 "properties": {
                     "_id": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     },
-                    "releaseDate": {
-                        "type": ["string"]
+                    "releaseDate": {
+                        "type": [
+                            "string"
+                        ]
                     },
                     "title": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     },
                     "description": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     },
                     "responsables": {
                         "type": "array",
@@ -28,22 +36,32 @@
                             "type": "object",
                             "properties": {
                                 "name": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string"
+                                    ]
                                 },
                                 "email": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string"
+                                    ]
                                 }
                             }
                         }
                     },
                     "type": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     },
                     "summary": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     },
                     "methodology": {
-                        "type": ["string"]
+                        "type": [
+                            "string"
+                        ]
                     }
                 }
             }

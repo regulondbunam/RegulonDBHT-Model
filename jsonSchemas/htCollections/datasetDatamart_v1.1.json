@@ -68,10 +68,16 @@
                         "type": "object",
                         "properties": {
                             "_id": {
-                                "type": "string"
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "name": {
-                                "type": "string"
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "synonyms": {
                                 "type": "array",
@@ -88,12 +94,14 @@
                                     "properties": {
                                         "_id": {
                                             "type": [
-                                                "string"
+                                                "string",
+                                                "null"
                                             ]
                                         },
                                         "name": {
                                             "type": [
-                                                "string"
+                                                "string",
+                                                "null"
                                             ]
                                         }
                                     },
@@ -487,6 +495,12 @@
                         "enum": [
                             "0",
                             "1"
+                        ]
+                    },
+                    "experimentCondition": {
+                        "type": [
+                            "string",
+                            "null"
                         ]
                     }
                 }
