@@ -9,7 +9,24 @@
                 ],
                 "properties": {
                     "_id": {
-                        "type": ["string"],
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "temporalId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
                         "annotation": {
                             "Synonyms": "",
                             "Description": "",
@@ -23,7 +40,9 @@
                         "type": "array",
                         "uniqueItems": true,
                         "items": {
-                            "type": ["string"]
+                            "type": [
+                                "string"
+                            ]
                         },
                         "annotation": {
                             "Synonyms": "",
@@ -38,7 +57,9 @@
                         "type": "object",
                         "properties": {
                             "_id": {
-                                "type": ["string"],
+                                "type": [
+                                    "string"
+                                ],
                                 "annotation": {
                                     "Synonyms": "",
                                     "Description": "",
@@ -49,7 +70,9 @@
                                 }
                             },
                             "name": {
-                                "type": ["string"],
+                                "type": [
+                                    "string"
+                                ],
                                 "annotation": {
                                     "Synonyms": "",
                                     "Description": "",
@@ -63,7 +86,9 @@
                                 "type": "array",
                                 "uniqueItems": true,
                                 "items": {
-                                    "type": ["string"]
+                                    "type": [
+                                        "string"
+                                    ]
                                 },
                                 "annotation": {
                                     "Synonyms": "",
@@ -75,7 +100,10 @@
                                 }
                             },
                             "bnumber": {
-                                "type": ["string"],
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
                                 "annotation": {
                                     "Synonyms": "",
                                     "Description": "",
@@ -85,11 +113,13 @@
                                     "Comments": ""
                                 }
                             }
-                        },
-                        "additionalProperties": false
+                        }
                     },
                     "count": {
-                        "type": ["number"],
+                        "type": [
+                            "string",
+                            "null"
+                        ],
                         "annotation": {
                             "Synonyms": "",
                             "Description": "",
@@ -100,7 +130,10 @@
                         }
                     },
                     "tpm": {
-                        "type": ["number"],
+                        "type": [
+                            "string",
+                            "null"
+                        ],
                         "annotation": {
                             "Synonyms": "",
                             "Description": "",
@@ -110,8 +143,11 @@
                             "Comments": ""
                         }
                     },
-                    "fkpm": {
-                        "type": ["number"],
+                    "fpkm": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
                         "annotation": {
                             "Synonyms": "",
                             "Description": "",

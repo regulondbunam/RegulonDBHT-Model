@@ -4,11 +4,11 @@
             "$jsonSchema": {
                 "type": "object",
                 "required": [
-                    "datasetId",
+                    "_id",
                     "authorsData"
                 ],
                 "properties": {
-                    "authorsData": {
+                    "_id": {
                         "type": ["string"],
                         "annotation": {
                             "Synonyms": "",
@@ -19,7 +19,22 @@
                             "Comments": ""
                         }
                     },
-                    "datasetId": {
+                    "datasetIds": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "string"
+                        },
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "authorsData": {
                         "type": ["string"],
                         "annotation": {
                             "Synonyms": "",

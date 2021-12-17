@@ -9,7 +9,9 @@
                 ],
                 "properties": {
                     "_id": {
-                        "type": ["string"],
+                        "type": [
+                            "string"
+                        ],
                         "annotation": {
                             "Synonyms": "",
                             "Description": "",
@@ -20,7 +22,9 @@
                         }
                     },
                     "chromosome": {
-                        "type": ["string"],
+                        "type": [
+                            "string"
+                        ],
                         "annotation": {
                             "Synonyms": "",
                             "Description": "",
@@ -31,7 +35,9 @@
                         }
                     },
                     "leftEndPosition": {
-                        "type": ["number"],
+                        "type": [
+                            "number"
+                        ],
                         "annotation": {
                             "Synonyms": "",
                             "Description": "",
@@ -42,7 +48,9 @@
                         }
                     },
                     "rightEndPosition": {
-                        "type": ["number"],
+                        "type": [
+                            "number"
+                        ],
                         "annotation": {
                             "Synonyms": "",
                             "Description": "",
@@ -52,8 +60,10 @@
                             "Comments": ""
                         }
                     },
-                    "pos_1": {
-                        "type": ["number"],
+                    "pos_1": {
+                        "type": [
+                            "number"
+                        ],
                         "annotation": {
                             "Synonyms": "",
                             "Description": "",
@@ -64,7 +74,9 @@
                         }
                     },
                     "strand": {
-                        "type": ["string"],
+                        "type": [
+                            "string"
+                        ],
                         "annotation": {
                             "Synonyms": "",
                             "Description": "",
@@ -81,7 +93,10 @@
                             "type": "object",
                             "properties": {
                                 "_id": {
-                                    "type": ["string"],
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
                                     "annotation": {
                                         "Synonyms": "",
                                         "Description": "",
@@ -92,7 +107,177 @@
                                     }
                                 },
                                 "name": {
-                                    "type": ["string"],
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "distanceTo": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "productName": {
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    },
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "transcriptionUnits": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "_id": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "annotation": {
+                                                    "Synonyms": "",
+                                                    "Description": "",
+                                                    "URI": "[value]",
+                                                    "Required": "[value]",
+                                                    "Example": "",
+                                                    "Comments": ""
+                                                }
+                                            },
+                                            "name": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "annotation": {
+                                                    "Synonyms": "",
+                                                    "Description": "",
+                                                    "URI": "[value]",
+                                                    "Required": "[value]",
+                                                    "Example": "",
+                                                    "Comments": ""
+                                                }
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    }
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "promoter": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "_id": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "name": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "strand": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "pos+1": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "sigma": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "confidenceLevel": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
                                     "annotation": {
                                         "Synonyms": "",
                                         "Description": "",
@@ -106,90 +291,34 @@
                             "additionalProperties": false
                         }
                     },
-                    "promoter": {
-                        "type": "object",
-                        "properties": {
-                            "_id": {
-                                "type": ["string"],
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
-                                }
-                            },
-                            "name": {
-                                "type": ["string"],
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
-                                }
-                            },
-                            "strand": {
-                                "type": ["string"],
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
-                                }
-                            },
-                            "pos+1": {
-                                "type": ["number"],
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
-                                }
-                            },
-                            "sigma": {
-                                "type": ["string"],
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
-                                }
-                            },
-                            "confidenceLevel": {
-                                "type": ["string"],
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
-                                }
-                            }
-                        }
-                    },
                     "datasetIds": {
                         "type": "array",
                         "uniqueItems": true,
                         "items": {
-                            "type": ["string"],
-                            "annotation": {
-                                "Synonyms": "",
-                                "Description": "",
-                                "URI": "[value]",
-                                "Required": "[value]",
-                                "Example": "",
-                                "Comments": ""
-                            }
+                            "type": [
+                                "string"
+                            ]
+                        },
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "temporalId": {
+                        "type": [
+                            "string"
+                        ],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
                         }
                     }
                 },

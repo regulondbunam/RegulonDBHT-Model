@@ -481,12 +481,6 @@
                             "null"
                         ]
                     },
-                    "nlpGrowthConditionsId": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
                     "geneExpressionFiltered": {
                         "type": [
                             "string",

@@ -54,7 +54,21 @@
                                         "Comments": ""
                                     }
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -105,7 +119,21 @@
                                         "Comments": ""
                                     }
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -156,7 +184,21 @@
                                         "Comments": ""
                                     }
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -207,7 +249,21 @@
                                         "Comments": ""
                                     }
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -258,7 +314,21 @@
                                         "Comments": ""
                                     }
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -309,7 +379,21 @@
                                         "Comments": ""
                                     }
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -360,7 +444,21 @@
                                         "Comments": ""
                                     }
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -411,7 +509,21 @@
                                         "Comments": ""
                                     }
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -462,7 +574,21 @@
                                         "Comments": ""
                                     }
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -513,7 +639,21 @@
                                         "Comments": ""
                                     }
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -564,7 +704,21 @@
                                         "Comments": ""
                                     }
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -615,7 +769,21 @@
                                         "Comments": ""
                                     }
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -666,7 +834,21 @@
                                         "Comments": ""
                                     }
                                 },
-                                "associatedPhrase": {
+                                "associatedPhrase": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "nameField": {
                                     "type": [
                                         "string",
                                         "null"
@@ -684,75 +866,96 @@
                         }
                     },
                     "additionalProperties": {
-                        "type": "object",
-                        "properties": {
-                            "name": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ],
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
-                                }
-                            },
-                            "value": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "value": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ],
-                                            "annotation": {
-                                                "Synonyms": "",
-                                                "Description": "",
-                                                "URI": "[value]",
-                                                "Required": "[value]",
-                                                "Example": "",
-                                                "Comments": ""
-                                            }
-                                        },
-                                        "score": {
-                                            "type": [
-                                                "number",
-                                                "null"
-                                            ],
-                                            "annotation": {
-                                                "Synonyms": "",
-                                                "Description": "",
-                                                "URI": "[value]",
-                                                "Required": "[value]",
-                                                "Example": "",
-                                                "Comments": ""
-                                            }
-                                        },
-                                        "associatedPhrase": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ],
-                                            "annotation": {
-                                                "Synonyms": "",
-                                                "Description": "",
-                                                "URI": "[value]",
-                                                "Required": "[value]",
-                                                "Example": "",
-                                                "Comments": ""
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "value": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "value": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "annotation": {
+                                                    "Synonyms": "",
+                                                    "Description": "",
+                                                    "URI": "[value]",
+                                                    "Required": "[value]",
+                                                    "Example": "",
+                                                    "Comments": ""
+                                                }
+                                            },
+                                            "score": {
+                                                "type": [
+                                                    "number",
+                                                    "null"
+                                                ],
+                                                "annotation": {
+                                                    "Synonyms": "",
+                                                    "Description": "",
+                                                    "URI": "[value]",
+                                                    "Required": "[value]",
+                                                    "Example": "",
+                                                    "Comments": ""
+                                                }
+                                            },
+                                            "associatedPhrase": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "annotation": {
+                                                    "Synonyms": "",
+                                                    "Description": "",
+                                                    "URI": "[value]",
+                                                    "Required": "[value]",
+                                                    "Example": "",
+                                                    "Comments": ""
+                                                }
+                                            },
+                                            "nameField": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "annotation": {
+                                                    "Synonyms": "",
+                                                    "Description": "",
+                                                    "URI": "[value]",
+                                                    "Required": "[value]",
+                                                    "Example": "",
+                                                    "Comments": ""
+                                                }
                                             }
                                         }
                                     }
                                 }
-                            }
-                        },
-                        "additionalProperties": false
+                            },
+                            "additionalProperties": false
+                        }
                     }
                 },
                 "additionalProperties": false
