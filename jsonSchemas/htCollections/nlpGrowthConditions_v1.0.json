@@ -494,10 +494,20 @@
                         }
                     },
                     "datasetIds": {
-                        "type": "string"
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
                     },
                     "temporalId": {
-                        "type": "string"
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     }
                 },
                 "additionalProperties": false
