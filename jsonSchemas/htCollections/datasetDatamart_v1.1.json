@@ -12,152 +12,160 @@
                     "_id": {
                         "type": "string"
                     },
-                    "publication": {
-                        "type": "object",
-                        "properties": {
-                            "pmid": {
-                                "type": [
-                                    "number",
-                                    "null"
-                                ]
-                            },
-                            "doi": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
-                            },
-                            "abstract": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
-                            },
-                            "authors": {
-                                "type": [
-                                    "array",
-                                    "null"
-                                ],
-                                "uniqueItems": true,
-                                "items": {
-                                    "type": "string"
+                    "publications": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "pmid": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "doi": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "abstract": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "authors": {
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "title": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "date": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "pmcid": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             },
-                            "title": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
-                            },
-                            "date": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
-                            },
-                            "pmcid": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
-                            }
-                        },
-                        "additionalProperties": false
+                            "additionalProperties": false
+                        }
                     },
-                    "objectTested": {
-                        "type": "object",
-                        "properties": {
-                            "_id": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
-                            },
-                            "name": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
-                            },
-                            "synonyms": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "items": {
-                                    "type": "string"
+                    "objectsTested": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "_id": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "name": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "synonyms": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "genes": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "_id": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "name": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    }
+                                },
+                                "note": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "activeConformations": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "externalCrossReferences": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "externalCrossReferenceId": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "pattern": "^RDB[A-Z0-9_]{5}[A-Z]{3}[0-9A-Z]{5}$"
+                                            },
+                                            "externalCrossReferenceName": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "objectId": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "url": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    }
                                 }
                             },
-                            "genes": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "_id": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
-                                        },
-                                        "name": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
-                                        }
-                                    },
-                                    "additionalProperties": false
-                                }
-                            },
-                            "note": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
-                            },
-                            "activeConformations": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "items": {
-                                    "type": "string"
-                                }
-                            },
-                            "externalCrossReferences": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "externalCrossReferenceId": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ],
-                                            "pattern": "^RDB[A-Z0-9_]{5}[A-Z]{3}[0-9A-Z]{5}$"
-                                        },
-                                        "externalCrossReferenceName": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
-                                        },
-                                        "objectId": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
-                                        },
-                                        "url": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
-                                        }
-                                    },
-                                    "additionalProperties": false
-                                }
-                            }
-                        },
-                        "additionalProperties": false
+                            "additionalProperties": false    
+                        }
                     },
                     "sourceSerie": {
                         "type": "object",
@@ -174,11 +182,15 @@
                                     "null"
                                 ]
                             },
-                            "title": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
+                            "titles": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
                             },
                             "platformId": {
                                 "type": [
