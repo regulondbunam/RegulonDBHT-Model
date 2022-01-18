@@ -5,7 +5,7 @@
                 "type": "object",
                 "required": [
                     "_id",
-                    "publication",
+                    "publications",
                     "sourceSerie"
                 ],
                 "properties": {
@@ -164,7 +164,7 @@
                                     }
                                 }
                             },
-                            "additionalProperties": false    
+                            "additionalProperties": false
                         }
                     },
                     "sourceSerie": {
@@ -183,7 +183,10 @@
                                 ]
                             },
                             "titles": {
-                                "type": "array",
+                                "type": [
+                                    "array",
+                                    "null"
+                                ],
                                 "uniqueItems": true,
                                 "items": {
                                     "type": [
@@ -281,7 +284,10 @@
                                 }
                             },
                             "datasetType": {
-                                "type": "string"
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             }
                         },
                         "additionalProperties": false
