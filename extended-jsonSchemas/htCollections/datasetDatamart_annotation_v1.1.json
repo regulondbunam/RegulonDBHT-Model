@@ -322,67 +322,83 @@
                     "sourceSerie": {
                         "type": "object",
                         "properties": {
-                            "sourceId": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ],
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
-                                }
-                            },
-                            "sourceName": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ],
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
-                                }
-                            },
-                            "title": {
+                            "series": {
                                 "type": "array",
                                 "uniqueItems": true,
                                 "items": {
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
-                                },
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
+                                    "type": "object",
+                                    "properties": {
+                                        "sourceId": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        },
+                                        "sourceName": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        }
+                                    },
+                                    "additionalProperties": false
                                 }
                             },
-                            "platformId": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ],
-                                "annotation": {
-                                    "Synonyms": "",
-                                    "Description": "",
-                                    "URI": "[value]",
-                                    "Required": "[value]",
-                                    "Example": "",
-                                    "Comments": ""
+                            "platforms": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "platformId": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        },
+                                        "platformTitle": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "annotation": {
+                                                "Synonyms": "",
+                                                "Description": "",
+                                                "URI": "[value]",
+                                                "Required": "[value]",
+                                                "Example": "",
+                                                "Comments": ""
+                                            }
+                                        }
+                                    },
+                                    "additionalProperties": false
                                 }
                             },
-                            "platformTitle": {
+                            "title": {
                                 "type": [
                                     "string",
                                     "null"
@@ -413,6 +429,20 @@
                             "method": {
                                 "type": [
                                     "string",
+                                    "null"
+                                ],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "readType": {
+                                "type": [
+                                    "string", 
                                     "null"
                                 ],
                                 "annotation": {
