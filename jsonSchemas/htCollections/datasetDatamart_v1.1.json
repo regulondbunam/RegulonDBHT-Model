@@ -204,7 +204,7 @@
                                                 "null"
                                             ]
                                         },
-                                        "platformTitle": {
+                                        "platformSource": {
                                             "type": [
                                                 "string",
                                                 "null"
@@ -213,6 +213,12 @@
                                     },
                                     "additionalProperties": false
                                 }
+                            },
+                            "platformTitle": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             },
                             "title": {
                                 "type": [
