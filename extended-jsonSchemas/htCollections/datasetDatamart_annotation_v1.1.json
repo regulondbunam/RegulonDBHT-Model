@@ -360,43 +360,53 @@
                                     "additionalProperties": false
                                 }
                             },
-                            "platforms": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "platformId": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ],
-                                            "annotation": {
-                                                "Synonyms": "",
-                                                "Description": "",
-                                                "URI": "[value]",
-                                                "Required": "[value]",
-                                                "Example": "",
-                                                "Comments": ""
-                                            }
-                                        },
-                                        "platformTitle": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ],
-                                            "annotation": {
-                                                "Synonyms": "",
-                                                "Description": "",
-                                                "URI": "[value]",
-                                                "Required": "[value]",
-                                                "Example": "",
-                                                "Comments": ""
-                                            }
+                            "platform": {
+                                "type": "object",
+                                "properties": {
+                                    "_id": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
                                         }
                                     },
-                                    "additionalProperties": false
-                                }
+                                    "source": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    },
+                                    "title": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "annotation": {
+                                            "Synonyms": "",
+                                            "Description": "",
+                                            "URI": "[value]",
+                                            "Required": "[value]",
+                                            "Example": "",
+                                            "Comments": ""
+                                        }
+                                    }
+                                },
+                                "additionalProperties": false
                             },
                             "title": {
                                 "type": [

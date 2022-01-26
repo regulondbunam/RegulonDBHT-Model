@@ -192,33 +192,29 @@
                                     "additionalProperties": false
                                 }
                             },
-                            "platforms": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "platformId": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
-                                        },
-                                        "platformSource": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
-                                        }
+                            "platform": {
+                                "type": "object",
+                                "properties": {
+                                    "_id": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
                                     },
-                                    "additionalProperties": false
-                                }
-                            },
-                            "platformTitle": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
+                                    "source": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    },
+                                    "title": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": false
                             },
                             "title": {
                                 "type": [
