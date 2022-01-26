@@ -117,7 +117,7 @@
                     },
                     "count": {
                         "type": [
-                            "string",
+                            "number",
                             "null"
                         ],
                         "annotation": {
@@ -131,7 +131,7 @@
                     },
                     "tpm": {
                         "type": [
-                            "string",
+                            "number",
                             "null"
                         ],
                         "annotation": {
@@ -145,7 +145,7 @@
                     },
                     "fpkm": {
                         "type": [
-                            "string",
+                            "number",
                             "null"
                         ],
                         "annotation": {
