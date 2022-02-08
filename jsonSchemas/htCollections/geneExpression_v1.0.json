@@ -56,8 +56,21 @@
                                     "string",
                                     "null"
                                 ]
+                            },
+                            "leftEndPosition": {
+                                "type": [
+                                    "number",
+                                    "null"
+                                ]
+                            },
+                            "rightEndPosition": {
+                                "type": [
+                                    "number",
+                                    "null"
+                                ]
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     },
                     "count": {
                         "type": [

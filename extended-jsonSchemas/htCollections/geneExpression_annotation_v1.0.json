@@ -112,8 +112,37 @@
                                     "Example": "",
                                     "Comments": ""
                                 }
+                            },
+                            "leftEndPosition": {
+                                "type": [
+                                    "number",
+                                    "null"
+                                ],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "rightEndPosition": {
+                                "type": [
+                                    "number",
+                                    "null"
+                                ],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     },
                     "count": {
                         "type": [
