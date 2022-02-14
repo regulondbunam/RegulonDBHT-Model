@@ -127,14 +127,17 @@
                         },
                         "additionalProperties": false
                     },
-                    "foundClassicRIs": {
+                    "foundRIs": {
                         "type": "array",
                         "uniqueItems": true,
                         "items": {
                             "type": "object",
                             "properties": {
                                 "tfbsLeftPosition": {
-                                    "type": ["number", "null"],
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ],
                                     "annotation": {
                                         "Synonyms": "",
                                         "Description": "",
@@ -145,7 +148,10 @@
                                     }
                                 },
                                 "tfbsRightPosition": {
-                                    "type": ["number", "null"],
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ],
                                     "annotation": {
                                         "Synonyms": "",
                                         "Description": "",
@@ -156,7 +162,10 @@
                                     }
                                 },
                                 "relativeGeneDistance": {
-                                    "type": ["number", "null"],
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ],
                                     "annotation": {
                                         "Synonyms": "",
                                         "Description": "",
@@ -167,7 +176,10 @@
                                     }
                                 },
                                 "relativeTSSDistance": {
-                                    "type": ["number", "null"],
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ],
                                     "annotation": {
                                         "Synonyms": "",
                                         "Description": "",
@@ -178,7 +190,10 @@
                                     }
                                 },
                                 "strand": {
-                                    "type": ["string", "null"],
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
                                     "annotation": {
                                         "Synonyms": "",
                                         "Description": "",
@@ -189,28 +204,10 @@
                                     }
                                 },
                                 "sequence": {
-                                    "type": ["string", "null"],
-                                    "annotation": {
-                                        "Synonyms": "",
-                                        "Description": "",
-                                        "URI": "[value]",
-                                        "Required": "[value]",
-                                        "Example": "",
-                                        "Comments": ""
-                                    }
-                                }
-                            },
-                            "additionalProperties": false
-                        }
-                    },
-                    "foundDatasetRIs": {
-                        "type": "array",
-                        "uniqueItems": true,
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "tfbsLeftPosition": {
-                                    "type": ["number", "null"],
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
                                     "annotation": {
                                         "Synonyms": "",
                                         "Description": "",
@@ -220,8 +217,190 @@
                                         "Comments": ""
                                     }
                                 },
-                                "tfbsRightPosition": {
-                                    "type": ["number", "null"],
+                                "citations": {
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "evidence": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "annotation": {
+                                                            "Synonyms": "",
+                                                            "Description": "",
+                                                            "URI": "[value]",
+                                                            "Required": "[value]",
+                                                            "Example": "",
+                                                            "Comments": ""
+                                                        }
+                                                    },
+                                                    "name": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "annotation": {
+                                                            "Synonyms": "",
+                                                            "Description": "",
+                                                            "URI": "[value]",
+                                                            "Required": "[value]",
+                                                            "Example": "",
+                                                            "Comments": ""
+                                                        }
+                                                    },
+                                                    "code": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "annotation": {
+                                                            "Synonyms": "",
+                                                            "Description": "",
+                                                            "URI": "[value]",
+                                                            "Required": "[value]",
+                                                            "Example": "",
+                                                            "Comments": ""
+                                                        }
+                                                    },
+                                                    "type": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "annotation": {
+                                                            "Synonyms": "",
+                                                            "Description": "",
+                                                            "URI": "[value]",
+                                                            "Required": "[value]",
+                                                            "Example": "",
+                                                            "Comments": ""
+                                                        }
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            },
+                                            "publication": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "annotation": {
+                                                            "Synonyms": "",
+                                                            "Description": "",
+                                                            "URI": "[value]",
+                                                            "Required": "[value]",
+                                                            "Example": "",
+                                                            "Comments": ""
+                                                        }
+                                                    },
+                                                    "authors": {
+                                                        "type": [
+                                                            "array",
+                                                            "null"
+                                                        ],
+                                                        "uniqueItems": true,
+                                                        "items": {
+                                                            "type": [
+                                                                "string"
+                                                            ]
+                                                        },
+                                                        "annotation": {
+                                                            "Synonyms": "",
+                                                            "Description": "",
+                                                            "URI": "[value]",
+                                                            "Required": "[value]",
+                                                            "Example": "",
+                                                            "Comments": ""
+                                                        }
+                                                    },
+                                                    "citation": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "annotation": {
+                                                            "Synonyms": "",
+                                                            "Description": "",
+                                                            "URI": "[value]",
+                                                            "Required": "[value]",
+                                                            "Example": "",
+                                                            "Comments": ""
+                                                        }
+                                                    },
+                                                    "pmid": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "annotation": {
+                                                            "Synonyms": "",
+                                                            "Description": "",
+                                                            "URI": "[value]",
+                                                            "Required": "[value]",
+                                                            "Example": "",
+                                                            "Comments": ""
+                                                        }
+                                                    },
+                                                    "title": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "annotation": {
+                                                            "Synonyms": "",
+                                                            "Description": "",
+                                                            "URI": "[value]",
+                                                            "Required": "[value]",
+                                                            "Example": "",
+                                                            "Comments": ""
+                                                        }
+                                                    },
+                                                    "url": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "annotation": {
+                                                            "Synonyms": "",
+                                                            "Description": "",
+                                                            "URI": "[value]",
+                                                            "Required": "[value]",
+                                                            "Example": "",
+                                                            "Comments": ""
+                                                        }
+                                                    },
+                                                    "year": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ],
+                                                        "annotation": {
+                                                            "Synonyms": "",
+                                                            "Description": "",
+                                                            "URI": "[value]",
+                                                            "Required": "[value]",
+                                                            "Example": "",
+                                                            "Comments": ""
+                                                        }
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    },
                                     "annotation": {
                                         "Synonyms": "",
                                         "Description": "",
@@ -231,41 +410,15 @@
                                         "Comments": ""
                                     }
                                 },
-                                "relativeGeneDistance": {
-                                    "type": ["number", "null"],
-                                    "annotation": {
-                                        "Synonyms": "",
-                                        "Description": "",
-                                        "URI": "[value]",
-                                        "Required": "[value]",
-                                        "Example": "",
-                                        "Comments": ""
-                                    }
-                                },
-                                "relativeTSSDistance": {
-                                    "type": ["number", "null"],
-                                    "annotation": {
-                                        "Synonyms": "",
-                                        "Description": "",
-                                        "URI": "[value]",
-                                        "Required": "[value]",
-                                        "Example": "",
-                                        "Comments": ""
-                                    }
-                                },
-                                "strand": {
-                                    "type": ["string", "null"],
-                                    "annotation": {
-                                        "Synonyms": "",
-                                        "Description": "",
-                                        "URI": "[value]",
-                                        "Required": "[value]",
-                                        "Example": "",
-                                        "Comments": ""
-                                    }
-                                },
-                                "sequence": {
-                                    "type": ["string", "null"],
+                                "origin": {
+                                    "type": [
+                                        "string", 
+                                        "null"
+                                    ],
+                                    "enum": [
+                                        "RegulonDB",
+                                        "Dataset"
+                                    ],
                                     "annotation": {
                                         "Synonyms": "",
                                         "Description": "",

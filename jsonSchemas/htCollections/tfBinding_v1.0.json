@@ -93,7 +93,7 @@
                             "additionalProperties": false
                         }
                     },
-                    "foundClassicRIs": {
+                    "foundRIs": {
                         "type": "array",
                         "uniqueItems": true,
                         "items": {
@@ -134,51 +134,112 @@
                                         "string",
                                         "null"
                                     ]
-                                }
-                            },
-                            "additionalProperties": false
-                        }
-                    },
-                    "foundDatasetRIs": {
-                        "type": "array",
-                        "uniqueItems": true,
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "tfbsLeftPosition": {
-                                    "type": [
-                                        "number",
-                                        "null"
-                                    ]
                                 },
-                                "tfbsRightPosition": {
+                                "citations": {
                                     "type": [
-                                        "number",
+                                        "array",
                                         "null"
-                                    ]
+                                    ],
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "evidence": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "name": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "code": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "type": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            },
+                                            "publication": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "authors": {
+                                                        "type": [
+                                                            "array",
+                                                            "null"
+                                                        ],
+                                                        "uniqueItems": true,
+                                                        "items": {
+                                                            "type": [
+                                                                "string"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "citation": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "pmid": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "title": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "url": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "year": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    }
                                 },
-                                "relativeGeneDistance": {
+                                "origin": {
                                     "type": [
-                                        "number",
+                                        "string", 
                                         "null"
-                                    ]
-                                },
-                                "relativeTSSDistance": {
-                                    "type": [
-                                        "number",
-                                        "null"
-                                    ]
-                                },
-                                "strand": {
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
-                                },
-                                "sequence": {
-                                    "type": [
-                                        "string",
-                                        "null"
+                                    ],
+                                    "enum": [
+                                        "RegulonDB",
+                                        "Dataset"
                                     ]
                                 }
                             },
