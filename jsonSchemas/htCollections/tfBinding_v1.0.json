@@ -99,6 +99,12 @@
                         "items": {
                             "type": "object",
                             "properties": {
+                                "_id": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
                                 "tfbsLeftPosition": {
                                     "type": [
                                         "number",
