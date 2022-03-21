@@ -1116,6 +1116,34 @@
                             "Example": "",
                             "Comments": ""
                         }
+                    },
+                    "cutOff": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
+                    },
+                    "publicNotes": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "annotation": {
+                            "Synonyms": "",
+                            "Description": "",
+                            "URI": "[value]",
+                            "Required": "[value]",
+                            "Example": "",
+                            "Comments": ""
+                        }
                     }
                 }
             }

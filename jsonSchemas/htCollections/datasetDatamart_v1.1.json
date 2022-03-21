@@ -535,6 +535,18 @@
                             "string",
                             "null"
                         ]
+                    },
+                    "cutOff": {
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    },
+                    "publicNotes": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     }
                 }
             }
