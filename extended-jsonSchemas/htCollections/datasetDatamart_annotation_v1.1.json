@@ -1144,6 +1144,86 @@
                             "Example": "",
                             "Comments": ""
                         }
+                    },
+                    "externalReferences": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "url": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "description": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "internalComment": {
+                                    "type": [
+                                        "string", 
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                },
+                                "note": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "annotation": {
+                                        "Synonyms": "",
+                                        "Description": "",
+                                        "URI": "[value]",
+                                        "Required": "[value]",
+                                        "Example": "",
+                                        "Comments": ""
+                                    }
+                                }
+                            },
+                            "additionalProperties": false
+                        }
                     }
                 }
             }

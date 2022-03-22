@@ -547,6 +547,46 @@
                             "string",
                             "null"
                         ]
+                    },
+                    "externalReferences": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "url": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "description": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "internalComment": {
+                                    "type": [
+                                        "string", 
+                                        "null"
+                                    ]
+                                },
+                                "note": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": false
+                        }
                     }
                 }
             }
