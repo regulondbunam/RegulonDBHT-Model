@@ -201,12 +201,6 @@
                                             "null"
                                         ]
                                     },
-                                    "source": {
-                                        "type": [
-                                            "string",
-                                            "null"
-                                        ]
-                                    },
                                     "title": {
                                         "type": [
                                             "string",
@@ -237,6 +231,12 @@
                             "readType": {
                                 "type": [
                                     "string", 
+                                    "null"
+                                ]
+                            },
+                            "sourceDB": {
+                                "type": [
+                                    "string",
                                     "null"
                                 ]
                             }
@@ -542,7 +542,7 @@
                             "null"
                         ]
                     },
-                    "publicNotes": {
+                    "notes": {
                         "type": [
                             "string",
                             "null"
@@ -569,12 +569,6 @@
                                 "description": {
                                     "type": [
                                         "string",
-                                        "null"
-                                    ]
-                                },
-                                "internalComment": {
-                                    "type": [
-                                        "string", 
                                         "null"
                                     ]
                                 },

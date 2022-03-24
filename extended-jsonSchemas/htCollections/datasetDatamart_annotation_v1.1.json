@@ -377,20 +377,6 @@
                                             "Comments": ""
                                         }
                                     },
-                                    "source": {
-                                        "type": [
-                                            "string",
-                                            "null"
-                                        ],
-                                        "annotation": {
-                                            "Synonyms": "",
-                                            "Description": "",
-                                            "URI": "[value]",
-                                            "Required": "[value]",
-                                            "Example": "",
-                                            "Comments": ""
-                                        }
-                                    },
                                     "title": {
                                         "type": [
                                             "string",
@@ -453,6 +439,20 @@
                             "readType": {
                                 "type": [
                                     "string", 
+                                    "null"
+                                ],
+                                "annotation": {
+                                    "Synonyms": "",
+                                    "Description": "",
+                                    "URI": "[value]",
+                                    "Required": "[value]",
+                                    "Example": "",
+                                    "Comments": ""
+                                }
+                            },
+                            "sourceDB": {
+                                "type": [
+                                    "string",
                                     "null"
                                 ],
                                 "annotation": {
@@ -1131,7 +1131,7 @@
                             "Comments": ""
                         }
                     },
-                    "publicNotes": {
+                    "notes": {
                         "type": [
                             "string",
                             "null"
@@ -1182,20 +1182,6 @@
                                 "description": {
                                     "type": [
                                         "string",
-                                        "null"
-                                    ],
-                                    "annotation": {
-                                        "Synonyms": "",
-                                        "Description": "",
-                                        "URI": "[value]",
-                                        "Required": "[value]",
-                                        "Example": "",
-                                        "Comments": ""
-                                    }
-                                },
-                                "internalComment": {
-                                    "type": [
-                                        "string", 
                                         "null"
                                     ],
                                     "annotation": {
