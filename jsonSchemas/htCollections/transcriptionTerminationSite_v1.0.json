@@ -119,12 +119,6 @@
                                         "null"
                                     ]
                                 },
-                                "name": {
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
-                                },
                                 "transcriptionUnits": {
                                     "type": "array",
                                     "uniqueItems": true,

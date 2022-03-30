@@ -223,20 +223,6 @@
                                         "Comments": ""
                                     }
                                 },
-                                "name": {
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ],
-                                    "annotation": {
-                                        "Synonyms": "",
-                                        "Description": "",
-                                        "URI": "[value]",
-                                        "Required": "[value]",
-                                        "Example": "",
-                                        "Comments": ""
-                                    }
-                                },
                                 "transcriptionUnits": {
                                     "type": "array",
                                     "uniqueItems": true,
