@@ -84,6 +84,12 @@
                                         "null"
                                     ]
                                 },
+                                "abbreviatedName": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
                                 "synonyms": {
                                     "type": "array",
                                     "uniqueItems": true,
@@ -228,7 +234,7 @@
                             },
                             "readType": {
                                 "type": [
-                                    "string", 
+                                    "string",
                                     "null"
                                 ]
                             },
@@ -579,6 +585,12 @@
                             },
                             "additionalProperties": false
                         }
+                    },
+                    "sourceReferenceGenome": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     }
                 }
             }
