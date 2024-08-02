@@ -138,7 +138,7 @@
                                     "items": {
                                         "type": "object",
                                         "properties": {
-                                            "externalCrossReferenceId": {
+                                            "externalCrossReferencesId": {
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -257,7 +257,14 @@
                                 ],
                                 "uniqueItems": false,
                                 "items": {
-                                    "type": "string"
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "uniqueItems": false,
+                                    "items": {
+                                        "type": "string"
+                                    }
                                 }
                             },
                             "controlId": {
@@ -267,7 +274,14 @@
                                 ],
                                 "uniqueItems": false,
                                 "items": {
-                                    "type": "string"
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "uniqueItems": false,
+                                    "items": {
+                                        "type": "string"
+                                    }
                                 }
                             },
                             "title": {
@@ -295,7 +309,14 @@
                                 ],
                                 "uniqueItems": false,
                                 "items": {
-                                    "type": "string"
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "uniqueItems": false,
+                                    "items": {
+                                        "type": "string"
+                                    }
                                 }
                             },
                             "experimentId": {
@@ -305,7 +326,14 @@
                                 ],
                                 "uniqueItems": false,
                                 "items": {
-                                    "type": "string"
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "uniqueItems": false,
+                                    "items": {
+                                        "type": "string"
+                                    }
                                 }
                             },
                             "datasetType": {
@@ -591,6 +619,24 @@
                             "string",
                             "null"
                         ]
+                    },
+                    "collectionData": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "source": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "additionalProperties": false
                     }
                 }
             }

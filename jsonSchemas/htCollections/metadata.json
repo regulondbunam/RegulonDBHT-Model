@@ -1,0 +1,55 @@
+{
+    "metadata": {
+        "validator": {
+            "$jsonSchema": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "datasetType"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": [
+                            "string"
+                        ]
+                    },
+                    "datasetType": {
+                        "type": [
+                            "string"
+                        ]
+                    },
+                    "source": {
+                        "type": [
+                            "string"
+                        ]
+                    },
+                    "metadataContent": {
+                        "type": [
+                            "string"
+                        ]
+                    },
+                    "status": {
+                        "type": [
+                            "string"
+                        ]
+                    },
+                    "releaseDate": {
+                        "type": [
+                            "string"
+                        ]
+                    },
+                    "reference": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "number"
+                        }
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "validationLevel": "strict",
+        "validationAction": "error"
+    }
+}
