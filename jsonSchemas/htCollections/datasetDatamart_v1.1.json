@@ -138,14 +138,14 @@
                                     "items": {
                                         "type": "object",
                                         "properties": {
-                                            "externalCrossReferencesId": {
+                                            "_id": {
                                                 "type": [
                                                     "string",
                                                     "null"
                                                 ],
                                                 "pattern": "^RDB[A-Z0-9_]{5}[A-Z]{3}[0-9A-Z]{5}$"
                                             },
-                                            "externalCrossReferenceName": {
+                                            "name": {
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -257,14 +257,7 @@
                                 ],
                                 "uniqueItems": false,
                                 "items": {
-                                    "type": [
-                                        "array",
-                                        "null"
-                                    ],
-                                    "uniqueItems": false,
-                                    "items": {
-                                        "type": "string"
-                                    }
+                                    "type": "string"
                                 }
                             },
                             "controlId": {
@@ -274,14 +267,7 @@
                                 ],
                                 "uniqueItems": false,
                                 "items": {
-                                    "type": [
-                                        "array",
-                                        "null"
-                                    ],
-                                    "uniqueItems": false,
-                                    "items": {
-                                        "type": "string"
-                                    }
+                                    "type": "string"
                                 }
                             },
                             "title": {
@@ -309,14 +295,7 @@
                                 ],
                                 "uniqueItems": false,
                                 "items": {
-                                    "type": [
-                                        "array",
-                                        "null"
-                                    ],
-                                    "uniqueItems": false,
-                                    "items": {
-                                        "type": "string"
-                                    }
+                                    "type": "string"
                                 }
                             },
                             "experimentId": {
@@ -326,14 +305,7 @@
                                 ],
                                 "uniqueItems": false,
                                 "items": {
-                                    "type": [
-                                        "array",
-                                        "null"
-                                    ],
-                                    "uniqueItems": false,
-                                    "items": {
-                                        "type": "string"
-                                    }
+                                    "type": "string"
                                 }
                             },
                             "datasetType": {
@@ -358,8 +330,10 @@
                         "type": "string"
                     },
                     "growthConditions": {
-                        "type": "object",
+                        "type": "array",
+                        "uniqueItems": true,
                         "items": {
+                            "type": ["object", "null"],
                             "properties": {
                                 "organism": {
                                     "type": "string"
@@ -400,14 +374,24 @@
                                 "mediumSupplements": {
                                     "type": "string"
                                 },
-                                "otherTherms": {
-                                    "type": "array",
+                                "agitationSpeed": {
+                                    "type": "string"
+                                },
+                                "experimentTitle": {
+                                    "type": "string"
+                                },
+                                "experimentId": {
+                                    "type": "string"
+                                },
+                                "otherTerms": {
+                                    "type": ["array", "string"],
                                     "uniqueItems": true,
                                     "items": {
                                         "type": "string"
                                     }
                                 }
-                            }
+                            },
+                            "additionalProperties": false
                         }
                     },
                     "releaseDataControl": {

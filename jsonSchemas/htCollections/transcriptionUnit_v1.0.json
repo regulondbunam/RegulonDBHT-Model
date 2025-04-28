@@ -21,7 +21,7 @@
                         "type": ["number"]
                     },
                     "name": {
-                        "type": ["string"]
+                        "type": ["string", "null"]
                     },
                     "strand": {
                         "type": ["string"]
